@@ -10,7 +10,6 @@ router = APIRouter()
 
 @router.post('/predict')
 async def upload_file(file: UploadFile = File(...)):
-    CLASSES = {'Cataract': 0, 'Diabetes': 1, 'Glaucoma': 2, 'Normal': 3, 'Other': 4}
     path = 'Local_storage/eye pictures/' + file.filename
     with open(path, "wb") as buffer:
         shutil.copyfileobj(file.file, buffer)
@@ -32,4 +31,4 @@ async def upload_file(file: UploadFile = File(...)):
         'percentage': percentage
     }
 
-    return CLASSES[response]
+    return response
