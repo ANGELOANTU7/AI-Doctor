@@ -11,7 +11,7 @@ const Login = () => {
   };
 
   return (
-    <div className="flex items-center justify-center h-screen">
+    <div className="flex items-center justify-center h-screen bg-emerald-500 w-screen">
       <div className="max-w-md mx-auto p-4 bg-slate-50 rounded shadow text-center">
       <Lottie animationData={animationData} style={{ width: 300, height: 200 }} />
         <h2 className="text-2xl font-bold mb-4">Login as</h2>
