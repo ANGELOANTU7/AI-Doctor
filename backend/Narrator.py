@@ -60,8 +60,8 @@ def extract_important_topics(questions):
         model="gpt-3.5-turbo",
         messages=[
             {
-                "role": "user",
-                "content": f"please introduce:\n\n{text}\n\n"
+                "role": "assistant",
+                "content": f"you are a patient question collector you have to intreact with patient in a friendly way and ask question one by one after he responds, you shall ask for medical history,present symtomps,family member history,social history,and tell to send vitals via smart watch"
             }
         ]
     )
@@ -78,7 +78,7 @@ def extract_image_name(questions):
         messages=[
             {
                 "role": "user",
-                "content": f"create a word for each paragraph as a list\n\n{text}\n\n"
+                "content": f"introduce your self "
             }
         ]
     )
@@ -91,6 +91,7 @@ def extract_image_name(questions):
 @router.get("/narrator")
 async def process_message():
     print("Giving promt to OPENAI...")
+
     file_path = 'Local_Storage/gpt promt/ieee_domain.txt'
     extracted_text = extract_text_from_file(file_path)
     narrate = extract_important_topics(extracted_text)
@@ -119,10 +120,7 @@ async def process_message():
                 with open('Local_Storage/Narration/response.txt', 'w') as file:
                     # Truncate the file to remove its contents
                     file.truncate()
-                shutil.rmtree("images")
 
 
-                image_name=extract_image_name(narrate)
-                image_list = image_name.splitlines()
 
-
+                
