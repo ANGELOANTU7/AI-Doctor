@@ -95,7 +95,7 @@ async def process_video():
     # Return the graph details
     return emotions, count_values
 
-@route_feed_analysis.post("/analyze_video")
+@route_feed_analysis.get("/analyze_video")
 async def process_video_route(background_tasks: BackgroundTasks):
     # Run the video processing in the background
     graph_details = await asyncio.create_task(process_video())
