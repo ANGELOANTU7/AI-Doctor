@@ -30,7 +30,7 @@ def pdf_to_images(pdf_path, output_folder):
 def NotesToText_handler():
     substring_to_remove = "Scanned by CamScanner"
     
-    folder_path = "Local_storage\medical history\medical_history_pdf"
+    folder_path = "Local_storage/medical history/medical_history_pdf"
 
     # Get all files in the folder
     mod_files = os.listdir(folder_path)
