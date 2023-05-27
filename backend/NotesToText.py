@@ -64,7 +64,7 @@ def NotesToText_handler():
                 image_contents += text.replace(substring_to_remove, "")
 
 
-        output_file = f"Local_storage/medical history/medical_history_text/{file_name}.txt"
+        output_file = f"Local_storage/Input/medical_history.txt"
     #    Write the text content to the output file
         with open(output_file, "w",encoding="utf-8") as file:
             file.write(image_contents)

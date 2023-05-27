@@ -60,4 +60,9 @@ async def upload_file(file: UploadFile = File(...)):
     accuracy = float(prediction[0][pred])  # Convert to Python float
     
     K.clear_session()
+    skin_file = "Local_Storage/Input/skin_result.txt"
+
+    with open(skin_file, "w") as f:
+        f.write(disease)
+
     return {"disease": disease, "accuracy": accuracy}
