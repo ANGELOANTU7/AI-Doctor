@@ -37,10 +37,17 @@ async def test_data(name : str = Form(...),age : str = Form(...),location : str 
     # Process the PDF file
     result = process_pdf(file_path)
 
-    # Return the result
+    form_data = f"Name: {name}\nAge: {age}\nLocation: {location}\nGender: {gender}\n" \
+                f"Height: {height}\nWeight: {weight}\nContact Info: {contactinfo}\n"
     
 
-    return {"name" : name, "age" : age, "location" : location,"gender" : gender, "height" : height,"weight" : weight,"contactinfo" : contactinfo}
+    file_location = "Local_storage\Input\\basicuserinfo.txt"
+    with open(file_location, "a") as file:
+        file.write(form_data)
+
+
+
+    return {"data" : form_data}
 
 @patient_route.post("/test")
 def test(test : str = Form(default=None)):
