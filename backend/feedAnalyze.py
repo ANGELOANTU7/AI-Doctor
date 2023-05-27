@@ -100,6 +100,17 @@ async def process_video_route(background_tasks: BackgroundTasks):
     # Run the video processing in the background
     graph_details = await asyncio.create_task(process_video())
 
+
+    emotions = graph_details[0]
+    count_values = graph_details[1]
+
+    file_location = 'Local_storage\Input\emotionanalysis.txt'
+    with open(file_location, 'w') as file:
+        file.write('Emotions:\n')
+        file.write(','.join(emotions))
+        file.write('\n\nCount Values:\n')
+        file.write(','.join(map(str, count_values)))
+
     return {"emotions": graph_details[0], "count_values": graph_details[1]}
 
 @route_feed_analysis.post("/test-analysis")
