@@ -18,7 +18,7 @@ def process_pdf(file_path: str) -> str:
         for page_num in range(len(pdf_reader.pages)):
             page = pdf_reader.pages[page_num]
             text += page.extract_text()
-        return text
+        return "Success"
 
 
 @patient_route.get("/")
@@ -27,7 +27,7 @@ def test():
 
 
 @patient_route.post("/test-data")
-async def test_data(name : str,age : str,place : str ,file : UploadFile = File(...)):
+async def test_data(name : str,age : str,location : str ,gender : str,height : str,file : UploadFile = File(...)):
     dat1 = await file.read()
     file_path = f"temp/{file.filename}"
     with open(file_path, "wb") as temp_file:
@@ -37,6 +37,6 @@ async def test_data(name : str,age : str,place : str ,file : UploadFile = File(.
     result = process_pdf(file_path)
 
     # Return the result
-    {"result": result}
+    
 
-    return {"name" : name, "age" : age, "place" : place,  "pdf_data" : result}
+    return {"name" : name, "age" : age, "location" : location,"gender" : gender, "height" : height,  "pdf_data" : result}
