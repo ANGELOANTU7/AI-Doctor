@@ -26,7 +26,7 @@ def pdf_to_images(pdf_path, output_folder):
     noImg = i+1     
     return image_paths,noImg
 
-@router.get("/notestotext")
+@router.get("/pdftotext")
 def NotesToText_handler():
     substring_to_remove = "Scanned by CamScanner"
     
@@ -40,8 +40,8 @@ def NotesToText_handler():
         file_name=file_name.split(".")[0]
 
         print(f"converting {file_name}....")
-        pdf_path = f'Local_Storage/notes_pdf/{file_name}.pdf'
-        output_folder = f'images/Notes_images/{file_name}'
+        pdf_path = f'Local_storage/medical history/medical_history_pdf/{file_name}.pdf'
+        output_folder = f'images/med_images/{file_name}'
         
         # Convert the PDF to images and save them in the output folder
         image_paths, noImg = pdf_to_images(pdf_path, output_folder)
@@ -54,7 +54,7 @@ def NotesToText_handler():
         image_contents = " "
         
         for j in range(noImg):
-            image_path = f'images/Notes_images/{file_name}/page_{j+1}.jpeg'   
+            image_path = f'images/med_images/{file_name}/page_{j+1}.jpeg'   
             with open(image_path, 'rb') as image_file:
                 content = image_file.read()
                 image = vision.Image(content=content)
@@ -64,7 +64,7 @@ def NotesToText_handler():
                 image_contents += text.replace(substring_to_remove, "")
 
 
-        output_file = f"Local_Storage/notes_txt/{file_name}.txt"
+        output_file = f"Local_storage/medical history/medical_history_text/{file_name}.txt"
     #    Write the text content to the output file
         with open(output_file, "w",encoding="utf-8") as file:
             file.write(image_contents)
