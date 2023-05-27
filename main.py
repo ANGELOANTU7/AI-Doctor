@@ -9,6 +9,8 @@ from backend.speech_text import router as speech2text
 from backend.Narrator import router as narrator
 from backend.eye_check import router as eye
 from backend.texttoAIvideo import router as aivideo
+from backend.throat_check import router as throat
+
 app = FastAPI()
 
 origins = ["*"]
@@ -26,6 +28,7 @@ app.include_router(eye)
 app.include_router(speech2text)
 app.include_router(narrator)
 app.include_router(aivideo)
+app.include_router(throat)
 #app.include_router(skin)
 # include other API routers as needed
 
