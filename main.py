@@ -10,7 +10,7 @@ from backend.Narrator import router as narrator
 from backend.eye_check import router as eye
 from backend.texttoAIvideo import router as aivideo
 from backend.throat_check import router as throat
-from backend.test_face4 import route_feed_analysis as feed_analysis
+from backend.feedAnalyze import route_feed_analysis as feed_analysis
 
 app = FastAPI()
 

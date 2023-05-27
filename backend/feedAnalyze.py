@@ -12,7 +12,7 @@ route_feed_analysis = APIRouter()
 
 # Define the video processing function
 async def process_video():
-    video_path = 'backend\database\kylo\\vid.mp4'
+    video_path = 'backend\database\kylo\\vid2.mp4'
 
     cap = cv2.VideoCapture(video_path)
 
@@ -101,3 +101,7 @@ async def process_video_route(background_tasks: BackgroundTasks):
     graph_details = await asyncio.create_task(process_video())
 
     return {"emotions": graph_details[0], "count_values": graph_details[1]}
+
+@route_feed_analysis.post("/test-analysis")
+def test_data():
+    return {"emotions": ["angry","disgust","fear","happy","sad","surprise","neutral"],"count_values": [10,0,0,30,1,1,69]}

@@ -5,7 +5,7 @@ import concurrent.futures
 import matplotlib.pyplot as plt
 
 # Load the video file
-video_path = 'backend\database\kylo\\vid.mp4'
+video_path = 'backend\database\kylo\\vid2.mp4'
 cap = cv2.VideoCapture(video_path)
 
 # Get video properties
