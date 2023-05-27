@@ -1,4 +1,4 @@
 venv/
 temp/
-backend/database/
-backend\database\representations_vgg_face.pkl
+backend/database
+tempCodeRunnerFile.py

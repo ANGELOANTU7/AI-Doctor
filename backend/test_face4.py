@@ -1,15 +1,18 @@
-from fastapi import BackgroundTasks, FastAPI
+from fastapi import BackgroundTasks,APIRouter
 import cv2
 import time
 from deepface import DeepFace
 import matplotlib.pyplot as plt
 import asyncio
+import concurrent.futures
 
-app = FastAPI()
+
+
+route_feed_analysis = APIRouter()
 
 # Define the video processing function
 async def process_video():
-    video_path = 'path_to_your_video_file.mp4'
+    video_path = 'backend\database\kylo\\vid.mp4'
 
     cap = cv2.VideoCapture(video_path)
 
@@ -30,7 +33,7 @@ async def process_video():
     }
 
     # Initialize video writer to save the modified frames
-    output_path = 'output_video.mp4'  # Path to the output video file
+    output_path = 'backend\database\kylo\\output.mp4'  # Path to the output video file
     fourcc = cv2.VideoWriter_fourcc(*'mp4v')
     out = cv2.VideoWriter(output_path, fourcc, fps, (frame_width, frame_height))
 
@@ -40,7 +43,7 @@ async def process_video():
         result = DeepFace.analyze(frame)
 
         # Access dominant emotion from the DeepFace result
-        emotion = result['dominant_emotion']
+        emotion = result[0]['dominant_emotion']
 
         # Increment the count for the detected emotion
         emotion_counts[emotion] += 1
@@ -92,7 +95,7 @@ async def process_video():
     # Return the graph details
     return emotions, count_values
 
-@app.post("/process_video")
+@route_feed_analysis.post("/analyze_video")
 async def process_video_route(background_tasks: BackgroundTasks):
     # Run the video processing in the background
     graph_details = await asyncio.create_task(process_video())
