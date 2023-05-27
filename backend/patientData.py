@@ -3,7 +3,7 @@ import chardet
 import PyPDF2
 
 
-test_route = APIRouter()
+patient_route = APIRouter()
 
 # def detect_encoding(data): # just to avoid any conflicts with decoding different files with different encoding
 #     result = chardet.detect(data)
@@ -22,12 +22,12 @@ def process_pdf(file_path: str) -> str:
         return text
 
 
-@test_route.get("/")
+@patient_route.get("/")
 def test():
     return {"message" : "hello.....basics okey"}
 
 
-@test_route.post("/test-data")
+@patient_route.post("/test-data")
 async def test_data(name : str,age : str,place : str ,file : UploadFile = File(...)):
     dat1 = await file.read()
     file_path = f"temp/{file.filename}"
