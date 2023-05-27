@@ -30,7 +30,7 @@ def test():
 async def test_data(name : str = Form(...),age : str = Form(...),location : str = Form(...) ,gender : str = Form(...),height : str = Form(...),weight : str = Form(...),contactinfo : str = Form(...),file : UploadFile = File(default=None)):
     if file != None:
         dat1 = await file.read()
-        file_path = f"temp/{file.filename}"
+        file_path = f"Local_storage\medical history\{file.filename}"
         with open(file_path, "wb") as temp_file:
             temp_file.write(dat1)
 
