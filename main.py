@@ -35,4 +35,4 @@ app.include_router(feed_analysis)
 # include other API routers as needed
 
 if __name__ == "__main__":
-    uvicorn.run("main:app",port=8023,host='127.0.0.1',reload=True)
+    uvicorn.run("main:app",port=8023,host='192.168.237.75',reload=True)
