@@ -23,13 +23,13 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-app.include_router(patient)
-app.include_router(pdftotext)
-app.include_router(eye)
-#app.include_router(speech2text)
-app.include_router(narrator)
-app.include_router(aivideo)
-app.include_router(throat)
+# app.include_router(patient)
+# app.include_router(pdftotext)
+# app.include_router(eye)
+# #app.include_router(speech2text)
+# app.include_router(narrator)
+# app.include_router(aivideo)
+# app.include_router(throat)
 app.include_router(feed_analysis)
 #app.include_router(skin)
 # include other API routers as needed
