@@ -3,6 +3,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from backend.feedAnalyze import route_feed_analysis as feed_analysis
+from backend.patientData import patient_route as patient
 
 app = FastAPI()
 
@@ -17,8 +18,8 @@ app.add_middleware(
 
 
 app.include_router(feed_analysis)
-#app.include_router(skin)
+app.include_router(patient)
 # include other API routers as needed
 
 if __name__ == "__main__":
-    uvicorn.run("main:app",port=6000,host='192.168.237.75',reload=True)
+    uvicorn.run("main_deepface:app",port=8000,host='192.168.237.129',reload=True)
