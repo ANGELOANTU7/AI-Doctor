@@ -32,7 +32,7 @@ const WebcamRecorder = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://192.168.237.75:8023/ai_text');
+        const response = await axios.get('http://192.168.100.185:8081/ai_text');
         console.log('Bot response:', response.data);
         setBotResponse(response.data.blendData); // Set the bot response in state
       } catch (error) {
@@ -100,7 +100,7 @@ const WebcamRecorder = () => {
 
   const convertSpeechToText = async () => {
     try {
-      const response = await axios.get('http://192.168.237.75:8023/speechtotext');
+      const response = await axios.get('http://192.168.100.185:8081/speechtotext');
       console.log('Speech to text:', response.data);
       setSpeechToText(response.data); // Set the converted text in state
     } catch (error) {

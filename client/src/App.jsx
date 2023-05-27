@@ -7,10 +7,14 @@ import PatientLogin from "./components/PatientLogin";
 import PatientDashboard from "./components/PatientDashboard.jsx"
 import WebcamRecorder from "./components/WebcamRecorder";
 import Uploadt from "./components/Uploadt.jsx"
-import MediaRecord from "./components/MediaRecord";
 import Uploadz from "./components/Uploadz";
 import Dashboard from "./components/Dashboard";
 import Media from "./components/Media";
+import EyeRecord from "./components/EyeRecord";
+import SkinRecord from "./components/SkinRecord";
+import Throatcheck from "./components/Throatcheck";
+import Emotionchart from "./components/Emotionchart";
+import DoctorDashboard from "./components/DoctorDashboard";
 function App() {
   return (
     <div className="container">
@@ -22,10 +26,14 @@ function App() {
           <Route path="/patientdashboard" element={<PatientDashboard />} />
          <Route path="/consult" element={<WebcamRecorder />} />
           <Route path="/uploadt" element={<Uploadt />} />
-          <Route path="/media" element={<MediaRecord />} />
           <Route path="/uploadz" element={<Uploadz />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/media" element={<Media />} />
+          <Route path="/eyerecord" element={<EyeRecord />} />
+          <Route path="/skinrecord" element={<SkinRecord />} />
+          <Route path="/throatcheck" element={<Throatcheck />} />
+          <Route path="/emotionchart" element={<Emotionchart />} />
+          <Route path="/doctordashboard" element={<DoctorDashboard />} />
         </Routes>
       </BrowserRouter>
     </div>
