@@ -34,9 +34,12 @@ def record_audio(duration, output_file):
 
 def speech_to_text(audio_file):
     audio_config = speechsdk.audio.AudioConfig(filename=audio_file)
+    print("config")
     speech_recognizer = speechsdk.SpeechRecognizer(speech_config=speech_config, audio_config=audio_config)
+    print("speech recog")
 
     result = speech_recognizer.recognize_once()
+    print(result)
     
     if result.reason == speechsdk.ResultReason.RecognizedSpeech:
         transcript = result.text
@@ -45,7 +48,7 @@ def speech_to_text(audio_file):
 
     return transcript
 
-@router.get("/api5")
+@router.get("/speechtotext")
 def convert_speech_to_text():
     print("recording..")
     duration = 5  # Recording duration in seconds
@@ -59,7 +62,7 @@ def convert_speech_to_text():
     transcript="."+transcript
     
         # Save the transcript to a text file
-    transcript_file = "Local_Storage/Generated_Files/response.txt"
+    transcript_file = "Local_Storage/Narration/response.txt"
     with open(transcript_file, "w") as f:
         f.write(transcript)
 

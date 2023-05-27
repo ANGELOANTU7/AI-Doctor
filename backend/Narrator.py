@@ -100,19 +100,6 @@ async def process_message():
     with open('Local_Storage/Narration/narration.txt', 'w', encoding='utf-8') as file:
         file.write(narrate)
 
-    image_name=extract_image_name(narrate)
-    image_list = image_name.splitlines()
-
-    # Create a directory to store the images
-    os.makedirs("images", exist_ok=True)
-    os.chdir("images")
-
-    # Process the paragraphs and search for related images
-    print(image_list)
-    process_paragraphs(image_list)
-
-    # Return to the parent directory
-    os.chdir("..")
 
 
     
@@ -138,13 +125,4 @@ async def process_message():
                 image_name=extract_image_name(narrate)
                 image_list = image_name.splitlines()
 
-                # Create a directory to store the images
-                os.makedirs("images", exist_ok=True)
-                os.chdir("images")
 
-                # Process the paragraphs and search for related images
-                print(image_list)
-                process_paragraphs(image_list)
-
-                # Return to the parent directory
-                os.chdir("..")
