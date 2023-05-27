@@ -63,6 +63,10 @@ def convert_speech_to_text():
     
         # Save the transcript to a text file
     transcript_file = "Local_Storage/Narration/response.txt"
+    transcript_file = "Local_Storage/Narration/response.txt"
+    with open(transcript_file, "w") as f:
+        f.write(transcript)
+        
     with open(transcript_file, "w") as f:
         f.write(transcript)
 
