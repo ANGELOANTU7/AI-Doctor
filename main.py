@@ -1,12 +1,12 @@
 import uvicorn
 from fastapi import FastAPI
 
-from backend.test import test_route as test
+from backend.patientData import patient_route as patient
 
 app = FastAPI()
 
 
-app.include_router(test)
+app.include_router(patient)
 # include other API routers as needed
 
 if __name__ == "__main__":
