@@ -1,5 +1,4 @@
 from fastapi import File,UploadFile,APIRouter
-import chardet
 import PyPDF2
 
 
