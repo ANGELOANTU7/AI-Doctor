@@ -4,7 +4,7 @@ import { ReactMediaRecorder } from 'react-media-recorder';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 
-const WebcamRecorder = () => {
+const Media = () => {
   const videoRef = useRef(null);
   const [mediaRecorder, setMediaRecorder] = useState(null);
   const [recording, setRecording] = useState(false);
@@ -127,21 +127,25 @@ const WebcamRecorder = () => {
         />
 
         <div className="mt-4">
-          <button 
+          <motion.button
             onClick={function(event){ handleStartRecording(); startBot()}}
             disabled={recording}
             className=" text-white font-bold py-2 px-4 rounded mr-2 text-3xl"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
           >
             ▶️
-          </button>
+          </motion.button>
 
-          <button
+          <motion.button
             onClick={handleStopRecording}
             disabled={!mediaRecorder || !recording}
             className=" text-white font-bold py-2 px-4 rounded mr-2 text-3xl"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
           >
             🛑
-          </button>
+          </motion.button>
 
           {recordedChunks.length > 0 && (
             <motion.button
@@ -154,14 +158,18 @@ const WebcamRecorder = () => {
             </motion.button>
           )}
 
-          <button
+          <motion.button
             onClick={convertSpeechToText}
             className='text-white py-2 px-4 rounded text-3xl'
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
           >
             🎙️
-          </button>
+          </motion.button>
           <Link to="/dashboard">
-            <button className="text-white py-2 px-4 rounded text-3xl">🏠</button>
+            <motion.button className="text-white py-2 px-4 rounded text-3xl" whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+              🏠
+            </motion.button>
           </Link>
         </div>
 
@@ -173,4 +181,4 @@ const WebcamRecorder = () => {
   );
 };
 
-export default WebcamRecorder;
+export default Media;

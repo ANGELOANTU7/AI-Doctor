@@ -65,7 +65,7 @@ const Uploadz = () => {
   };
 
   return (
-    <div className="flex justify-center items-center min-h-screen w-screen bg-emerald-400">
+    <div className="flex justify-center items-center min-h-screen w-screen bg-emerald-300">
       <motion.form
         onSubmit={handleSubmit}
         className="bg-white shadow-md rounded px-8 pt-6 pb-8 w-1/2"
@@ -170,7 +170,7 @@ const Uploadz = () => {
           </label>
         </div>
         <div className="flex justify-end">
-          <Link to="/media">
+          <Link to="/consult">
           <button
             type="submit"
             className="bg-emerald-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"

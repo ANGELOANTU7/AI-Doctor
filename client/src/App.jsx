@@ -9,7 +9,8 @@ import WebcamRecorder from "./components/WebcamRecorder";
 import Uploadt from "./components/Uploadt.jsx"
 import MediaRecord from "./components/MediaRecord";
 import Uploadz from "./components/Uploadz";
-
+import Dashboard from "./components/Dashboard";
+import Media from "./components/Media";
 function App() {
   return (
     <div className="container">
@@ -23,6 +24,8 @@ function App() {
           <Route path="/uploadt" element={<Uploadt />} />
           <Route path="/media" element={<MediaRecord />} />
           <Route path="/uploadz" element={<Uploadz />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/media" element={<Media />} />
         </Routes>
       </BrowserRouter>
     </div>

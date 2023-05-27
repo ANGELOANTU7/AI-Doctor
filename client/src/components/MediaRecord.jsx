@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { ReactMediaRecorder } from 'react-media-recorder';
 import { motion } from 'framer-motion';
 import Lottie from 'lottie-react';
@@ -5,6 +6,8 @@ import animationData from '../assets/95915-chat-bot-animation.json';
 import axios from 'axios';
 
 const MediaRecord = () => {
+  const [botResponse, setBotResponse] = useState('');
+
   const handleVideoUpload = async (videoBlob) => {
     const formData = new FormData();
     formData.append('video', videoBlob);
@@ -15,6 +18,17 @@ const MediaRecord = () => {
       // Handle the API response here
     } catch (error) {
       console.error('Video upload error:', error);
+      // Handle errors
+    }
+  };
+
+  const startBot = async () => {
+    try {
+      const response = await axios.get('http://192.168.237.75:8023/ai_text');
+      console.log('Bot response:', response.data);
+      setBotResponse(response.data.blendData); // Set the bot response in state
+    } catch (error) {
+      console.error('Bot error:', error);
       // Handle errors
     }
   };
@@ -32,7 +46,7 @@ const MediaRecord = () => {
               whileTap={{ scale: 0.9 }}
               className="bg-blue-400 hover:bg-emerald-700 text-white font-bold py-2 px-4 rounded mb-4"
             >
-              Start Meet 👨‍⚕️
+              Start Meet 
             </motion.button>
             <motion.button
               onClick={() => {
@@ -42,7 +56,13 @@ const MediaRecord = () => {
               whileTap={{ scale: 0.9 }}
               className="bg-blue-400 hover:bg-emerald-700 text-white font-bold py-2 px-4 rounded mb-4"
             >
-              Stop Meet 💊
+              Stop Meet
+            </motion.button>
+            <motion.button
+              onClick={startBot}
+              className="bg-blue-800 hover:bg-emerald-700 text-white font-bold py-2 px-4 rounded mb-4"
+            >
+              Start Bot 
             </motion.button>
             {mediaBlobUrl && (
               <motion.video
@@ -56,6 +76,7 @@ const MediaRecord = () => {
                 transition={{ duration: 0.5 }}
               />
             )}
+            {botResponse && <p className="mt-4">Bot Response: {botResponse}</p>} {/* Display bot response */}
           </div>
         )}
       />
