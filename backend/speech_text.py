@@ -63,11 +63,12 @@ def convert_speech_to_text():
     
         # Save the transcript to a text file
     transcript_file = "Local_Storage/Narration/response.txt"
-    transcript_file = "Local_Storage/Narration/response.txt"
+    transcript_file1 = "Local_Storage/Input/user_response.txt"
     with open(transcript_file, "w") as f:
         f.write(transcript)
         
-    with open(transcript_file, "w") as f:
+    with open(transcript_file1, "a") as f:
+        f.write('\n')
         f.write(transcript)
 
     
