@@ -1,2 +1,4 @@
 venv/
 temp/
+backend/database/
+backend\database\representations_vgg_face.pkl
