@@ -30,7 +30,7 @@ def pdf_to_images(pdf_path, output_folder):
 def NotesToText_handler():
     substring_to_remove = "Scanned by CamScanner"
     
-    folder_path = "Local_Storage/notes_pdf"
+    folder_path = "Local_storage\medical history\medical_history_pdf"
 
     # Get all files in the folder
     mod_files = os.listdir(folder_path)
@@ -77,43 +77,3 @@ def NotesToText_handler():
                 response.error.message))
 
 
-
-@router.post("/notestotext_modwise")
-async def upload_files(files: List[UploadFile] = File(...)):
-    filenames = []
-    for file in files:
-        contents = await file.read()
-        with open("Local_Storage/notes_pdf/"+file.filename, "wb") as f:
-            f.write(contents)
-        filenames.append(file.filename)
-    return {"filenames": filenames}
-
-@router.post("/notestotext_syllabus")
-async def upload_files(files: List[UploadFile] = File(...)):
-    filenames = []
-    for file in files:
-        contents = await file.read()
-        with open("Local_Storage/syllabus_pdf"+file.filename, "wb") as f:
-            f.write(contents)
-        filenames.append(file.filename)
-    return {"filenames": filenames}
-
-@router.post("/notestotext_pyqs")
-async def upload_files(files: List[UploadFile] = File(...)):
-    filenames = []
-    for file in files:
-        contents = await file.read()
-        with open("Local_Storage/pyqs_pdf"+file.filename, "wb") as f:
-            f.write(contents)
-        filenames.append(file.filename)
-    return {"filenames": filenames}
-
-@router.post("/notestotext_anythingelse")
-async def upload_files(files: List[UploadFile] = File(...)):
-    filenames = []
-    for file in files:
-        contents = await file.read()
-        with open("Local_Storage/anything_else/"+file.filename, "wb") as f:
-            f.write(contents)
-        filenames.append(file.filename)
-    return {"filenames": filenames}
