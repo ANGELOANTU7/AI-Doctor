@@ -27,7 +27,7 @@ def test():
 
 
 @patient_route.post("/test-data")
-async def test_data(name : str,age : str,location : str ,gender : str,height : str,weight : str,contactinfo : str,file : UploadFile = File(...)):
+async def test_data(name : str,age : str,location : str ,gender : str,height : str,weight : str,contactinfo : str,medicalhistory : str ,file : UploadFile = File(...)):
     dat1 = await file.read()
     file_path = f"temp/{file.filename}"
     with open(file_path, "wb") as temp_file:
