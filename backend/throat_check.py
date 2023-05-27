@@ -85,6 +85,11 @@ async def predict(file: UploadFile = File(...)):
         name="Tonsillitis"
 
     print(name)
+    throat_file = "Local_Storage/Input/throat_result.txt"
+
+    with open(throat_file, "w") as f:
+        f.write(name)
+
     return {"throat :"+name}
 
 

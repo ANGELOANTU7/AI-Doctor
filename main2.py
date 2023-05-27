@@ -30,4 +30,4 @@ app.include_router(aivideo)
 # include other API routers as needed
 
 if __name__ == "__main__":
-    uvicorn.run("main:app",port=8080,host='192.168.237.75',reload=True)
+    uvicorn.run("main:app",port=8023,host='192.168.100.185',reload=True)

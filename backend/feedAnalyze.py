@@ -1,4 +1,4 @@
-from fastapi import BackgroundTasks,APIRouter
+from fastapi import BackgroundTasks,APIRouter,UploadFile,File
 import cv2
 import time
 from deepface import DeepFace
@@ -100,8 +100,29 @@ async def process_video_route(background_tasks: BackgroundTasks):
     # Run the video processing in the background
     graph_details = await asyncio.create_task(process_video())
 
+
+    emotions = graph_details[0]
+    count_values = graph_details[1]
+
+    file_location = 'Local_storage\Input\emotionanalysis.txt'
+    with open(file_location, 'w') as file:
+        file.write('Emotions:\n')
+        file.write(','.join(emotions))
+        file.write('\n\nCount Values:\n')
+        file.write(','.join(map(str, count_values)))
+
     return {"emotions": graph_details[0], "count_values": graph_details[1]}
 
 @route_feed_analysis.post("/test-analysis")
 def test_data():
     return {"emotions": ["angry","disgust","fear","happy","sad","surprise","neutral"],"count_values": [10,0,0,30,1,1,69]}
+
+@route_feed_analysis.post("upload-feed")
+async def upload_video(video: UploadFile = File(...)):
+    # Save the uploaded video to a local file
+    file_location = f"backend\database\kylo\\vid.mp4"
+    with open(file_location, "wb") as file:
+        contents = await video.read()
+        file.write(contents)
+
+    return {"message": "Video uploaded successfully.", "file_location": file_location}

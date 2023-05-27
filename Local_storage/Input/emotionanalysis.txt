@@ -1,0 +1,5 @@
+Emotions:
+angry,disgust,fear,happy,sad,surprise,neutral
+
+Count Values:
+11,0,0,33,0,0,67
