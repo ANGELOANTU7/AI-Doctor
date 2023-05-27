@@ -9,9 +9,7 @@ import keras
 from keras import backend as K
 from fastapi import APIRouter,File, UploadFile, Form
 import shutil
-import io
-from PIL import Image
-
+from keras.utils import load_img
 
 
 router = APIRouter()
@@ -30,27 +28,36 @@ SKIN_CLASSES = {
 
 
 
-@router.post('/skin')
-def upload_file(file: UploadFile = File(...)):
-    path='Local_storage/skin pictures/'+file.filename
-    with open(file.filename, "wb") as buffer:
-        shutil.copyfileobj(file.file, buffer)
-    j_file = open('modelnew.json', 'r')
-    loaded_json_model = j_file.read()
-    j_file.close()
-    model = model_from_json(loaded_json_model)
+def load_model():
+    # Load the model architecture from JSON
+    with open('modelnew.json', 'r') as json_file:
+        loaded_json_model = json_file.read()
+        model = model_from_json(loaded_json_model)
+    # Load the model weights
     model.load_weights('modelnew.h5')
-    content = await file.read()  # Read the uploaded file as bytes
-    img = Image.open(BytesIO(content))  # Open the file-like object with PIL
-    img = img.resize((224, 224))  # Resize the image if desired
-    img1 = Image.open(file)
-    img1 = img1.resize((224, 224))
-    img1 = np.array(img1)
-    img1 = img1.reshape((1,224,224,3))
-    img1 = img1/255
-    prediction = model.predict(img1)
+    return model
+
+def preprocess_image(img):
+    img = img.resize((224, 224))
+    img = np.array(img)
+    img = img.reshape((1, 224, 224, 3))
+    img = img / 255.0
+    return img
+
+@router.post("/skin")
+async def upload_file(file: UploadFile = File(...)):
+    path = 'Local_storage/skin pictures/' + file.filename
+    with open(path, "wb") as buffer:
+        shutil.copyfileobj(file.file, buffer)
+    
+    model = load_model()
+    img = load_img(path, target_size=(224, 224))
+    img = preprocess_image(img)
+    
+    prediction = model.predict(img)
     pred = np.argmax(prediction)
     disease = SKIN_CLASSES[pred]
-    accuracy = prediction[0][pred]
+    accuracy = float(prediction[0][pred])  # Convert to Python float
+    
     K.clear_session()
-    return {"diease:"+disease+"  accuracy:"+accuracy}
+    return {"disease": disease, "accuracy": accuracy}
