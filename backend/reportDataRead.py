@@ -1,6 +1,5 @@
 from fastapi import APIRouter
 from transformers import pipeline
-import shutil
 import os
 import asyncio
 
@@ -93,7 +92,7 @@ async def gen_summary(dat):
 router_summariser = APIRouter()
 
 
-@router_summariser.post("/get-summary")
+@router_summariser.get("/get-summary")
 async def get_summary():
     file = read_files()
     data = await gen_summary(file)
