@@ -17,6 +17,8 @@ import Emotionchart from "./components/Emotionchart";
 import DoctorDashboard from "./components/DoctorDashboard";
 import Healthplan from "./components/Healthplan";
 import Webcam from "./components/Webcam";
+import Result from "./components/Result";
+import Webc from "./components/Webc";
 function App() {
   return (
     <div className="container">
@@ -38,6 +40,8 @@ function App() {
           <Route path="/doctordashboard" element={<DoctorDashboard />} />
           <Route path="/healthplan" element={<Healthplan />} />
           <Route path="/webcam" element={<Webcam />} />
+          <Route path="/result" element={<Result />} />
+          <Route path="/webc" element={<Webc />} />
 
         </Routes>
       </BrowserRouter>

@@ -1,26 +1,37 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const Result = () => {
-  const [input, setInput] = useState('');
   const [output, setOutput] = useState('');
-  const [numDays, setNumDays] = useState('');
 
-  const API_KEY = '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';
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch('http://192.168.237.129:8000/get-report');
+        const data = await response.json();
+        const input = data.summary;
+        handleMessage(input);
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    };
 
-  const handleMessage = async () => {
+    fetchData();
+  }, []);
+
+  const handleMessage = async (input) => {
     try {
       const response = await fetch('https://api.openai.com/v1/chat/completions', {
-        method: 'POST',
+        method: 'GET',
         headers: {
           'Content-Type': 'application/json',
-          Authorization: `Bearer ${API_KEY}`,
+          Authorization: 'Bearer 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',
         },
         body: JSON.stringify({
           model: 'gpt-3.5-turbo',
           messages: [
             {
               role: 'system',
-              content: `Create a report according to details taken from patient.`,
+              content: 'Create a medical report based on the provided text.',
             },
             {
               role: 'user',
@@ -33,22 +44,16 @@ const Result = () => {
       const data = await response.json();
       const message = data.choices[0].message.content;
 
-      setOutput(formatOutput(message));
+      setOutput(message);
     } catch (error) {
-      console.error(error);
+      console.error('Error communicating with OpenAI:', error);
     }
   };
 
- 
-
-
   return (
-    <div className="bg-gray-100 py-8 px-4 w-screen mt-4">
-      <h1 className="text-3xl font-bold mb-6 text-center">My health Report</h1>
-      <div className="bg-white rounded-lg shadow-md p-6 mb-6">
-
-        
-      </div>
+    <div className=" py-4 w-screen">
+        <p>{output}</p>
+      
     </div>
   );
 };
