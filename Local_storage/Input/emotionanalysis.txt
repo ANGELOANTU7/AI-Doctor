@@ -2,4 +2,4 @@ Emotions:
 angry,disgust,fear,happy,sad,surprise,neutral
 
 Count Values:
-11,0,0,30,1,0,69
+10,0,0,32,1,0,68

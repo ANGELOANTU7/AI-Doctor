@@ -9,6 +9,20 @@ patient_route = APIRouter()
 #     encoding = result["encoding"]
 #     return encoding
 
+def read_patient_data():
+    patient_data = {}
+    
+    with open("Local_storage\Input\\basicuserinfo.txt", "r") as file:
+        lines = file.readlines()
+
+    for line in lines:
+        if ":" in line:
+            key, value = line.strip().split(":", 1)
+            patient_data[key.strip()] = value.strip()
+
+    return patient_data
+
+
 
 def process_pdf(file_path: str) -> str:
     with open(file_path, "rb") as pdf_file:
@@ -47,8 +61,15 @@ async def test_data(name : str = Form(...),age : str = Form(...),location : str 
 
 
 
-    return {"data" : form_data}
+    return {"data" : form_data,"status" : "success"}
 
 @patient_route.post("/test")
 def test(test : str = Form(default=None)):
     return{"data" : test}
+
+
+@patient_route.get("/get-patient-data")
+def post_patient_data():
+    patient_data = read_patient_data()
+    print(patient_data)
+    return{"data" : patient_data}

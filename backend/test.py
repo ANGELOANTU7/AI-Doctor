@@ -1,7 +1,10 @@
-import time
+import asyncio
+from fastapi import BackgroundTasks,APIRouter
 
-response_file_path = "Local_storage/Narration/response.txt"
-question_file_path = "Local_storage/Narration/question.txt"
+route_doc_narrate = APIRouter()
+
+response_file_path = "Narration/response.txt"
+question_file_path = "Narration/question.txt"
 previous_response = ""
 question_counter = 0
 questions = [
@@ -27,7 +30,7 @@ def addquestion(question):
         file.write(question)
     print("Question added:", question)
 
-def check_for_changes():
+async def check_for_changes(completion_event):
     global previous_response
     global question_counter
 
@@ -38,7 +41,8 @@ def check_for_changes():
         if current_response != previous_response:
             if current_response.lower() == "bye":
                 print("Questionnaire completed.")
-                break
+                completion_event.set()
+                return "Questionnaire completed."
 
             print("Change detected in response file.")
             if question_counter < len(questions):
@@ -49,11 +53,21 @@ def check_for_changes():
                     print("All questions have been completed. The questionnaire will be concluded after the current question.")
             else:
                 print("All questions have been completed. The questionnaire will be concluded after the current question.")
-                break
+                completion_event.set()
+                return "All questions have been completed."
 
             previous_response = current_response
 
-        time.sleep(1)  # Wait for 1 second before checking again
+        await asyncio.sleep(1)  # Wait for 1 second before checking again
 
-# Start monitoring the response file for changes and add new questions if necessary
-check_for_changes()
+async def process_questionnaire(completion_event):
+    return await check_for_changes(completion_event)
+
+@route_doc_narrate.post("/start-questionnaire")
+async def start_questionnaire(background_tasks: BackgroundTasks):
+    completion_event = asyncio.Event()
+    loop = asyncio.get_event_loop()
+    task = loop.create_task(process_questionnaire(completion_event))
+    background_tasks.add_task(task)
+    await completion_event.wait()
+    return {"status": "Questionnaire completed."}

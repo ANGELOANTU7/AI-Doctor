@@ -117,7 +117,7 @@ async def process_video_route(background_tasks: BackgroundTasks):
 def test_data():
     return {"emotions": ["angry","disgust","fear","happy","sad","surprise","neutral"],"count_values": [10,0,0,30,1,1,69]}
 
-@route_feed_analysis.post("upload-feed")
+@route_feed_analysis.post("/upload-feed")
 async def upload_video(video: UploadFile = File(...)):
     # Save the uploaded video to a local file
     file_location = f"backend\database\kylo\\vid.mp4"
