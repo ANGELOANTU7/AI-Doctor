@@ -2,3 +2,4 @@ venv/
 temp/
 backend/database
 tempCodeRunnerFile.py
+backend/backup

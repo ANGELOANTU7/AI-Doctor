@@ -12,7 +12,7 @@ route_feed_analysis = APIRouter()
 
 # Define the video processing function
 async def process_video():
-    video_path = 'backend\database\kylo\\vid2.mp4'
+    video_path = 'backend\database\kylo\\vid.mp4'
 
     cap = cv2.VideoCapture(video_path)
 
@@ -125,4 +125,4 @@ async def upload_video(video: UploadFile = File(...)):
         contents = await video.read()
         file.write(contents)
 
-    return {"message": "Video uploaded successfully.", "file_location": file_location}
+    return {"message": "Video uploaded successfully.", "status": True}
