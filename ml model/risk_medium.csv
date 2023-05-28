@@ -1,0 +1,91 @@
+Location,Gender,Age,BMI,Symptoms,Duration of Symptoms,Smoker,BP,Temperature,Disease Risk
+Alappuzha,Male,Child,27,Cough,5,No,120/78,37.5,Medium
+Pathanamthitta,Female,Teenage,26,Headache,4,No,122/80,37.8,Medium
+Kottayam,Male,Adult,29,Fatigue,7,No,118/76,37.2,Medium
+Idukki,Female,Old,27,Shortness of Breath,6,No,120/78,37.9,Medium
+Ernakulam,Male,Child,26,Sore Throat,5,No,123/80,37.6,Medium
+Thrissur,Female,Teenage,29,Fever,6,No,119/77,37.4,Medium
+Palakkad,Male,Adult,27,Body Aches,7,No,121/79,37.7,Medium
+Malappuram,Female,Old,26,Cough,4,No,118/76,37.3,Medium
+Kozhikode,Male,Child,29,Fatigue,5,No,120/78,37.8,Medium
+Wayanad,Female,Teenage,27,Headache,6,No,122/80,37.5,Medium
+Kannur,Male,Adult,26,Sore Throat,7,No,119/77,37.2,Medium
+Kasaragod,Female,Old,29,Shortness of Breath,4,No,121/79,37.9,Medium
+Trivandrum,Male,Child,27,Fever,5,No,118/76,37.6,Medium
+Kollam,Female,Teenage,26,Body Aches,6,No,120/78,37.4,Medium
+Alappuzha,Male,Adult,29,Cough,7,No,123/80,37.7,Medium
+Pathanamthitta,Female,Old,27,Fatigue,4,No,119/77,37.3,Medium
+Kottayam,Male,Child,26,Sore Throat,5,No,118/76,37.8,Medium
+Idukki,Female,Teenage,29,Headache,6,No,122/80,37.5,Medium
+Ernakulam,Male,Adult,27,Shortness of Breath,7,No,120/78,37.2,Medium
+Thrissur,Female,Old,26,Cough,4,No,121/79,37.9,Medium
+Palakkad,Male,Child,29,Fatigue,5,No,119/77,37.6,Medium
+Malappuram,Female,Teenage,27,Fever,6,No,118/76,37.4,Medium
+Kozhikode,Male,Adult,26,Body Aches,7,No,123/80,37.7,Medium
+Wayanad,Female,Old,29,Cough,4,No,120/78,37.3,Medium
+Kannur,Male,Child,27,Fatigue,5,No,118/76,37.8,Medium
+Kasaragod,Female,Teenage,26,Headache,6,No,122/80,37.5,Medium
+Trivandrum,Male,Adult,29,Sore Throat,7,No,119/77,37.2,Medium
+Kollam,Female,Old,27,Shortness of Breath,4,No,121/79,37.9,Medium
+Alappuzha,Male,Child,26,Cough,5,No,118/76,37.6,Medium
+Pathanamthitta,Female,Teenage,29,Fever,6,No,120/78,37.4,Medium
+Kottayam,Male,Adult,27,Fatigue,7,No,123/80,37.7,Medium
+Idukki,Female,Old,26,Body Aches,4,No,119/77,37.3,Medium
+Ernakulam,Male,Child,29,Sore Throat,5,No,120/78,37.8,Medium
+Thrissur,Female,Teenage,27,Headache,6,No,122/80,37.5,Medium
+Palakkad,Male,Adult,26,Shortness of Breath,7,No,119/77,37.2,Medium
+Malappuram,Female,Old,29,Cough,4,No,121/79,37.9,Medium
+Kozhikode,Male,Child,27,Fatigue,5,No,118/76,37.6,Medium
+Wayanad,Female,Teenage,26,Fever,6,No,120/78,37.4,Medium
+Kannur,Male,Adult,29,Body Aches,7,No,123/80,37.7,Medium
+Kasaragod,Female,Old,27,Cough,4,No,119/77,37.3,Medium
+Trivandrum,Male,Child,26,Sore Throat,5,No,121/79,37.8,Medium
+Kollam,Female,Teenage,29,Headache,6,No,118/76,37.5,Medium
+Alappuzha,Male,Adult,27,Shortness of Breath,7,No,122/80,37.2,Medium
+Pathanamthitta,Female,Old,26,Cough,4,No,120/78,37.9,Medium
+Kottayam,Male,Child,29,Fatigue,5,No,119/77,37.6,Medium
+Idukki,Female,Teenage,27,Fever,6,No,121/79,37.4,Medium
+Ernakulam,Male,Adult,26,Body Aches,7,No,118/76,37.7,Medium
+Thrissur,Female,Old,29,Sore Throat,4,No,123/80,37.3,Medium
+Palakkad,Male,Child,27,Cough,5,No,120/78,37.8,Medium
+Malappuram,Female,Teenage,26,Fatigue,6,No,122/80,37.5,Medium
+Kozhikode,Male,Adult,29,Headache,7,No,119/77,37.2,Medium
+Wayanad,Female,Old,27,Shortness of Breath,4,No,121/79,37.9,Medium
+Kannur,Male,Child,26,Cough,5,No,118/76,37.6,Medium
+Kasaragod,Female,Teenage,29,Fever,6,No,120/78,37.4,Medium
+Trivandrum,Male,Adult,27,Body Aches,7,No,123/80,37.7,Medium
+Kollam,Female,Old,26,Sore Throat,4,No,119/77,37.3,Medium
+Alappuzha,Male,Child,29,Fatigue,5,No,121/79,37.8,Medium
+Pathanamthitta,Female,Teenage,27,Cough,6,No,118/76,37.5,Medium
+Kottayam,Male,Adult,26,Headache,7,No,120/78,37.2,Medium
+Idukki,Female,Old,29,Shortness of Breath,4,No,122/80,37.9,Medium
+Ernakulam,Male,Child,27,Fever,5,No,119/77,37.6,Medium
+Thrissur,Female,Teenage,26,Body Aches,6,No,123/80,37.4,Medium
+Palakkad,Male,Adult,29,Cough,7,No,118/76,37.7,Medium
+Malappuram,Female,Old,27,Fatigue,4,No,120/78,37.3,Medium
+Kozhikode,Male,Child,26,Sore Throat,5,No,121/79,37.8,Medium
+Wayanad,Female,Teenage,29,Headache,6,No,118/76,37.5,Medium
+Kannur,Male,Adult,27,Shortness of Breath,7,No,120/78,37.2,Medium
+Kasaragod,Female,Old,26,Cough,4,No,123/80,37.9,Medium
+Trivandrum,Male,Child,29,Fatigue,5,No,119/77,37.6,Medium
+Kollam,Female,Teenage,27,Fever,6,No,121/79,37.4,Medium
+Alappuzha,Male,Adult,26,Body Aches,7,No,118/76,37.7,Medium
+Pathanamthitta,Female,Old,29,Sore Throat,4,No,120/78,37.3,Medium
+Kottayam,Male,Child,27,Shortness of Breath,5,No,122/80,37.9,Medium
+Idukki,Female,Teenage,26,Cough,6,No,119/77,37.6,Medium
+Ernakulam,Male,Adult,29,Fatigue,7,No,121/79,37.4,Medium
+Thrissur,Female,Old,27,Headache,4,No,118/76,37.7,Medium
+Palakkad,Male,Child,26,Fever,5,No,123/80,37.5,Medium
+Malappuram,Female,Teenage,29,Body Aches,6,No,119/77,37.2,Medium
+Kozhikode,Male,Adult,27,Shortness of Breath,7,No,120/78,37.9,Medium
+Wayanad,Female,Old,26,Cough,4,No,118/76,37.6,Medium
+Kannur,Male,Child,29,Fatigue,5,No,121/79,37.4,Medium
+Kasaragod,Female,Teenage,27,Headache,6,No,123/80,37.7,Medium
+Trivandrum,Male,Adult,26,Sore Throat,7,No,119/77,37.3,Medium
+Kollam,Female,Old,29,Cough,4,No,120/78,37.8,Medium
+Alappuzha,Male,Child,27,Fever,5,No,118/76,37.5,Medium
+Pathanamthitta,Female,Teenage,26,Fatigue,6,No,122/80,37.2,Medium
+Kottayam,Male,Adult,29,Body Aches,7,No,119/77,37.9,Medium
+Idukki,Female,Old,27,Shortness of Breath,4,No,121/79,37.6,Medium
+Ernakulam,Male,Child,26,Cough,5,No,118/76,37.4,Medium
+Thrissur,Female,Teenage,29,Fatigue,6,No,123/80,37.7,Medium

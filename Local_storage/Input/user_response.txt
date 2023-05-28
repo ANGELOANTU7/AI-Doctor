@@ -3,3 +3,7 @@
 .I don't have any medical condition.
 .No, I haven't gone through any hospitalization or surgeries.
 .Bye.
+.Hello.
+.Mic check. Mic check.
+.Speech recognition failed: ResultReason.NoMatch
+.Hello, my name is Angela. What is your name?

@@ -1,268 +1,181 @@
-Location,Gender,Age,BMI,Allergy,Symptoms,Duration of Symptoms,Current Disease Info,Occupation,Smoker,BP Range,Temp Range,Disease,Prescription
-Thrissur,Male,35,26,None,"Fever, Cough, Fatigue",5,None,Engineer,No,120/80,37.5°C,Common Cold,"Rest, Plenty of Fluids"
-Kozhikode,Female,42,30,Pollen,"Sneezing, Itchy Eyes",3,None,Teacher,No,130/90,36.9°C,Allergic Rhinitis,Antihistamines
-Alappuzha,Male,28,23,None,"Headache, Sore Throat",2,None,Accountant,No,110/70,37.2°C,Tonsillitis,"Analgesics, Antibiotics"
-Ernakulam,Female,50,29,None,"Fatigue, Joint Pain, Muscle Aches",7,None,Nurse,No,125/80,37.8°C,Influenza,"Bed Rest, Antiviral Medication"
-Malappuram,Male,45,31,None,"Chest Pain, Shortness of Breath",1,None,Doctor,No,135/85,37.4°C,Coronary Artery Disease,"Aspirin, Statins"
-Kottayam,Female,32,27,None,"Abdominal Pain, Nausea, Vomiting",4,None,Pharmacist,No,120/80,37.0°C,Gastritis,"Antacids, Proton Pump Inhibitors"
-Kannur,Male,55,33,Penicillin,"Rash, Swelling, Itching",6,None,Carpenter,No,130/85,36.8°C,Penicillin Allergy,"Epinephrine, Antihistamines"
-Pathanamthitta,Female,38,25,None,"Dizziness, Fainting, Palpitations",2,None,Receptionist,No,110/70,37.2°C,Arrhythmia,"Beta Blockers, Calcium Channel Blockers"
-Kasaragod,Male,48,29,None,"Back Pain, Limited Mobility",10,None,Gardener,No,125/80,37.6°C,Lumbar Disc Herniation,"Physical Therapy, Pain Medication"
-Idukki,Female,25,22,None,"Fever, Sore Throat, Cough",3,None,Student,No,120/75,37.1°C,Pharyngitis,"Analgesics, Antibiotics"
-Palakkad,Male,40,28,Dust,"Sneezing, Runny Nose",5,None,Salesperson,No,130/90,37.5°C,Allergic Rhinitis,Antihistamines
-Thrissur,Female,31,24,None,"Fatigue, Joint Pain, Headache",7,None,Lawyer,No,115/75,37.3°C,Fibromyalgia,"Pain Medication, Antidepressants"
-Kozhikode,Male,55,32,Pollen,"Itchy Eyes, Sneezing",4,None,Retired,No,135/85,36.9°C,Allergic Rhinitis,Antihistamines
-Alappuzha,Female,29,21,None,"Cough, Sore Throat, Runny Nose",2,None,IT Professional,No,120/80,37.2°C,Upper Respiratory Infection,"Rest, Fluids, Cough Syrup"
-Ernakulam,Male,43,27,None,"Fatigue, Shortness of Breath",8,None,Engineer,No,125/85,37.8°C,Asthma,"Bronchodilators, Inhalers"
-Malappuram,Female,33,30,None,"Abdominal Pain, Nausea, Vomiting",3,None,Nurse,No,130/90,37.4°C,Gastritis,"Antacids, Proton Pump Inhibitors"
-Kottayam,Male,49,29,None,"Chest Pain, Palpitations",1,None,Doctor,No,110/70,37.0°C,Angina,"Nitroglycerin, Beta Blockers"
-Kannur,Female,36,26,Pollen,"Sneezing, Itchy Eyes",6,None,Pharmacist,No,125/80,36.8°C,Allergic Rhinitis,Antihistamines
-Pathanamthitta,Male,52,31,None,"Joint Pain, Limited Mobility",3,None,Accountant,No,130/85,37.2°C,Osteoarthritis,"Analgesics, Physical Therapy"
-Kasaragod,Female,30,28,None,"Fever, Sore Throat, Cough",5,None,Teacher,No,120/80,37.6°C,Pharyngitis,"Analgesics, Antibiotics"
-Idukki,Male,27,24,None,"Fatigue, Headache, Runny Nose",2,None,Student,No,115/75,37.1°C,Common Cold,"Rest, Plenty of Fluids"
-Palakkad,Female,44,27,Dust,"Sneezing, Itchy Eyes",7,None,Salesperson,No,130/90,37.5°C,Allergic Rhinitis,Antihistamines
-Thrissur,Male,39,25,None,"Fatigue, Joint Pain, Muscle Aches",9,None,Lawyer,No,115/75,37.3°C,Fibromyalgia,"Pain Medication, Antidepressants"
-Kozhikode,Female,53,32,None,"Cough, Sore Throat, Runny Nose",3,None,Retired,No,135/85,36.9°C,Upper Respiratory Infection,"Rest, Fluids, Cough Syrup"
-Alappuzha,Male,31,23,None,"Fatigue, Shortness of Breath",7,None,IT Professional,No,120/80,37.2°C,Asthma,"Bronchodilators, Inhalers"
-Ernakulam,Female,47,29,None,"Abdominal Pain, Nausea, Vomiting",2,None,Nurse,No,130/90,37.4°C,Gastritis,"Antacids, Proton Pump Inhibitors"
-Malappuram,Male,34,27,None,"Chest Pain, Palpitations",1,None,Doctor,No,110/70,37.0°C,Angina,"Nitroglycerin, Beta Blockers"
-Kottayam,Female,50,26,Pollen,"Sneezing, Itchy Eyes",6,None,Pharmacist,No,125/80,36.8°C,Allergic Rhinitis,Antihistamines
-Kannur,Male,37,30,None,"Joint Pain, Limited Mobility",4,None,Accountant,No,130/85,37.2°C,Osteoarthritis,"Analgesics, Physical Therapy"
-Pathanamthitta,Female,28,29,None,"Fever, Sore Throat, Cough",5,None,Teacher,No,120/80,37.6°C,Pharyngitis,"Analgesics, Antibiotics"
-Kasaragod,Male,45,25,None,"Fatigue, Headache, Runny Nose",3,None,Student,No,115/75,37.1°C,Common Cold,"Rest, Plenty of Fluids"
-Idukki,Female,32,28,Dust,"Sneezing, Itchy Eyes",7,None,Salesperson,No,130/90,37.5°C,Allergic Rhinitis,Antihistamines
-Palakkad,Male,41,27,None,"Fatigue, Joint Pain, Muscle Aches",9,None,Lawyer,No,115/75,37.3°C,Fibromyalgia,"Pain Medication, Antidepressants"
-Thrissur,Female,55,31,None,"Cough, Sore Throat, Runny Nose",3,None,Retired,No,135/85,36.9°C,Upper Respiratory Infection,"Rest, Fluids, Cough Syrup"
-Kozhikode,Male,29,23,None,"Fatigue, Shortness of Breath",7,None,IT Professional,No,120/80,37.2°C,Asthma,"Bronchodilators, Inhalers"
-Alappuzha,Female,43,28,None,"Abdominal Pain, Nausea, Vomiting",2,None,Nurse,No,130/90,37.4°C,Gastritis,"Antacids, Proton Pump Inhibitors"
-Ernakulam,Male,30,25,None,"Chest Pain, Palpitations",1,None,Doctor,No,110/70,37.0°C,Angina,"Nitroglycerin, Beta Blockers"
-Malappuram,Female,48,30,Pollen,"Sneezing, Itchy Eyes",6,None,Pharmacist,No,125/80,36.8°C,Allergic Rhinitis,Antihistamines
-Kottayam,Male,35,31,None,"Joint Pain, Limited Mobility",4,None,Accountant,No,130/85,37.2°C,Osteoarthritis,"Analgesics, Physical Therapy"
-Kannur,Female,54,27,None,"Fever, Sore Throat, Cough",5,None,Teacher,No,120/80,37.6°C,Pharyngitis,"Analgesics, Antibiotics"
-Pathanamthitta,Male,31,24,None,"Fatigue, Headache, Runny Nose",3,None,Student,No,115/75,37.1°C,Common Cold,"Rest, Plenty of Fluids"
-Kasaragod,Female,46,26,Dust,"Sneezing, Itchy Eyes",7,None,Salesperson,No,130/90,37.5°C,Allergic Rhinitis,Antihistamines
-Idukki,Male,33,29,None,"Fatigue, Joint Pain, Muscle Aches",9,None,Lawyer,No,115/75,37.3°C,Fibromyalgia,"Pain Medication, Antidepressants"
-Palakkad,Female,42,27,None,"Cough, Sore Throat, Runny Nose",3,None,Retired,No,135/85,36.9°C,Upper Respiratory Infection,"Rest, Fluids, Cough Syrup"
-Thrissur,Male,56,32,None,"Fatigue, Shortness of Breath",7,None,IT Professional,No,120/80,37.2°C,Asthma,"Bronchodilators, Inhalers"
-Kozhikode,Female,30,23,None,"Abdominal Pain, Nausea, Vomiting",2,None,Nurse,No,130/90,37.4°C,Gastritis,"Antacids, Proton Pump Inhibitors"
-Alappuzha,Male,44,28,None,"Chest Pain, Palpitations",1,None,Doctor,No,110/70,37.0°C,Angina,"Nitroglycerin, Beta Blockers"
-Ernakulam,Female,31,25,Pollen,"Sneezing, Itchy Eyes",6,None,Pharmacist,No,125/80,36.8°C,Allergic Rhinitis,Antihistamines
-Malappuram,Male,49,30,None,"Joint Pain, Limited Mobility",4,None,Accountant,No,130/85,37.2°C,Osteoarthritis,"Analgesics, Physical Therapy"
-Kottayam,Female,34,31,None,"Fever, Sore Throat, Cough",5,None,Teacher,No,120/80,37.6°C,Pharyngitis,"Analgesics, Antibiotics"
-Kannur,Male,55,24,None,"Fatigue, Headache, Runny Nose",3,None,Student,No,115/75,37.1°C,Common Cold,"Rest, Plenty of Fluids"
-Pathanamthitta,Female,32,26,Dust,"Sneezing, Itchy Eyes",7,None,Salesperson,No,130/90,37.5°C,Allergic Rhinitis,Antihistamines
-Kasaragod,Male,47,27,None,"Cough, Sore Throat, Runny Nose",3,None,Retired,No,135/85,36.9°C,Upper Respiratory Infection,"Rest, Fluids, Cough Syrup"
-Idukki,Female,29,29,None,"Fatigue, Shortness of Breath",7,None,IT Professional,No,120/80,37.2°C,Asthma,"Bronchodilators, Inhalers"
-Palakkad,Male,43,27,None,"Abdominal Pain, Nausea, Vomiting",2,None,Nurse,No,130/90,37.4°C,Gastritis,"Antacids, Proton Pump Inhibitors"
-Thrissur,Female,57,32,None,"Chest Pain, Palpitations",1,None,Doctor,No,110/70,37.0°C,Angina,"Nitroglycerin, Beta Blockers"
-Kozhikode,Male,31,23,Pollen,"Sneezing, Itchy Eyes",6,None,Pharmacist,No,125/80,36.8°C,Allergic Rhinitis,Antihistamines
-Alappuzha,Female,45,28,None,"Joint Pain, Limited Mobility",4,None,Accountant,No,130/85,37.2°C,Osteoarthritis,"Analgesics, Physical Therapy"
-Ernakulam,Male,32,25,None,"Fever, Sore Throat, Cough",5,None,Teacher,No,120/80,37.6°C,Pharyngitis,"Analgesics, Antibiotics"
-Malappuram,Female,50,24,None,"Fatigue, Headache, Runny Nose",3,None,Student,No,115/75,37.1°C,Common Cold,"Rest, Plenty of Fluids"
-Kottayam,Male,36,26,Dust,"Sneezing, Itchy Eyes",7,None,Salesperson,No,130/90,37.5°C,Allergic Rhinitis,Antihistamines
-Kannur,Female,56,29,None,"Fatigue, Shortness of Breath",7,None,IT Professional,No,120/80,37.2°C,Asthma,"Bronchodilators, Inhalers"
-Pathanamthitta,Male,33,27,None,"Abdominal Pain, Nausea, Vomiting",2,None,Nurse,No,130/90,37.4°C,Gastritis,"Antacids, Proton Pump Inhibitors"
-Kasaragod,Female,48,28,None,"Chest Pain, Palpitations",1,None,Doctor,No,110/70,37.0°C,Angina,"Nitroglycerin, Beta Blockers"
-Idukki,Male,30,24,Pollen,"Sneezing, Itchy Eyes",6,None,Pharmacist,No,125/80,36.8°C,Allergic Rhinitis,Antihistamines
-Palakkad,Female,44,27,None,"Joint Pain, Limited Mobility",4,None,Accountant,No,130/85,37.2°C,Osteoarthritis,"Analgesics, Physical Therapy"
-Thrissur,Male,58,32,None,"Fever, Sore Throat, Cough",5,None,Teacher,No,120/80,37.6°C,Pharyngitis,"Analgesics, Antibiotics"
-Kozhikode,Female,32,23,None,"Fatigue, Headache, Runny Nose",3,None,Student,No,115/75,37.1°C,Common Cold,"Rest, Plenty of Fluids"
-Alappuzha,Male,46,28,Dust,"Sneezing, Itchy Eyes",7,None,Salesperson,No,130/90,37.5°C,Allergic Rhinitis,Antihistamines
-Ernakulam,Female,33,25,None,"Abdominal Pain, Nausea, Vomiting",2,None,Nurse,No,130/90,37.4°C,Gastritis,"Antacids, Proton Pump Inhibitors"
-Malappuram,Male,51,24,None,"Chest Pain, Palpitations",1,None,Doctor,No,110/70,37.0°C,Angina,"Nitroglycerin, Beta Blockers"
-Kottayam,Female,37,26,Pollen,"Sneezing, Itchy Eyes",6,None,Pharmacist,No,125/80,36.8°C,Allergic Rhinitis,Antihistamines
-Kannur,Male,57,29,None,"Joint Pain, Limited Mobility",4,None,Accountant,No,130/85,37.2°C,Osteoarthritis,"Analgesics, Physical Therapy"
-Pathanamthitta,Female,34,27,None,"Fatigue, Shortness of Breath",7,None,Teacher,No,120/80,37.6°C,Pharyngitis,"Analgesics, Antibiotics"
-Kasaragod,Male,49,28,None,"Fever, Sore Throat, Cough",5,None,Student,No,115/75,37.1°C,Common Cold,"Rest, Plenty of Fluids"
-Idukki,Female,31,24,Dust,"Sneezing, Itchy Eyes",3,None,Salesperson,No,130/90,37.5°C,Allergic Rhinitis,Antihistamines
-Palakkad,Male,45,27,None,"Abdominal Pain, Nausea, Vomiting",2,None,Nurse,No,130/90,37.4°C,Gastritis,"Antacids, Proton Pump Inhibitors"
-Thrissur,Female,59,32,None,"Chest Pain, Palpitations",1,None,Doctor,No,110/70,37.0°C,Angina,"Nitroglycerin, Beta Blockers"
-Kozhikode,Male,33,23,None,"Fatigue, Headache, Runny Nose",6,None,Pharmacist,No,125/80,36.8°C,Common Cold,"Rest, Plenty of Fluids"
-Alappuzha,Female,47,28,Pollen,"Sneezing, Itchy Eyes",7,None,IT Professional,No,120/80,37.2°C,Allergic Rhinitis,Antihistamines
-Ernakulam,Male,34,25,None,"Abdominal Pain, Nausea, Vomiting",2,None,Salesperson,No,130/85,37.5°C,Gastritis,"Antacids, Proton Pump Inhibitors"
-Malappuram,Female,52,24,None,"Joint Pain, Limited Mobility",4,None,Doctor,No,115/75,37.1°C,Osteoarthritis,"Analgesics, Physical Therapy"
-Kottayam,Male,38,26,None,"Fever, Sore Throat, Cough",5,None,Teacher,No,130/90,37.6°C,Pharyngitis,"Analgesics, Antibiotics"
-Kannur,Female,58,29,Dust,"Sneezing, Itchy Eyes",3,None,Nurse,No,120/80,37.4°C,Allergic Rhinitis,Antihistamines
-Pathanamthitta,Male,35,27,None,"Fatigue, Shortness of Breath",7,None,Pharmacist,No,115/75,37.0°C,Asthma,"Bronchodilators, Inhalers"
-Kasaragod,Female,50,28,None,"Cough, Sore Throat, Runny Nose",5,None,Accountant,No,125/80,36.8°C,Upper Respiratory Infection,"Rest, Fluids, Cough Syrup"
-Idukki,Male,32,24,None,"Fatigue, Headache, Runny Nose",6,None,IT Professional,No,130/90,37.5°C,Common Cold,"Rest, Plenty of Fluids"
-Palakkad,Female,46,27,None,"Joint Pain, Limited Mobility",4,None,Doctor,No,110/70,37.2°C,Osteoarthritis,"Analgesics, Physical Therapy"
-Thrissur,Male,60,32,None,"Fever, Sore Throat, Cough",5,None,Student,No,120/80,37.6°C,Pharyngitis,"Analgesics, Antibiotics"
-Kozhikode,Female,34,23,None,"Fatigue, Headache, Runny Nose",3,None,Salesperson,No,115/75,37.1°C,Common Cold,"Rest, Plenty of Fluids"
-Alappuzha,Male,48,28,Dust,"Sneezing, Itchy Eyes",7,None,Nurse,No,130/90,37.4°C,Allergic Rhinitis,Antihistamines
-Ernakulam,Female,35,25,None,"Abdominal Pain, Nausea, Vomiting",2,None,Pharmacist,No,130/90,37.5°C,Gastritis,"Antacids, Proton Pump Inhibitors"
-Malappuram,Male,53,24,None,"Chest Pain, Palpitations",1,None,Doctor,No,110/70,37.0°C,Angina,"Nitroglycerin, Beta Blockers"
-Kottayam,Female,39,26,Pollen,"Sneezing, Itchy Eyes",6,None,Student,No,125/80,36.8°C,Allergic Rhinitis,Antihistamines
-Kannur,Male,59,29,None,"Fatigue, Shortness of Breath",7,None,IT Professional,No,120/80,37.2°C,Asthma,"Bronchodilators, Inhalers"
-Pathanamthitta,Female,36,27,None,"Abdominal Pain, Nausea, Vomiting",2,None,Salesperson,No,130/90,37.4°C,Gastritis,"Antacids, Proton Pump Inhibitors"
-Kasaragod,Male,51,28,None,"Chest Pain, Palpitations",1,None,Doctor,No,110/70,37.0°C,Angina,"Nitroglycerin, Beta Blockers"
-Idukki,Female,33,24,Dust,"Sneezing, Itchy Eyes",6,None,Pharmacist,No,125/80,36.8°C,Allergic Rhinitis,Antihistamines
-Palakkad,Male,47,27,None,"Fever, Sore Throat, Cough",5,None,Accountant,No,130/85,37.2°C,Pharyngitis,"Analgesics, Antibiotics"
-Thrissur,Female,61,32,None,"Joint Pain, Limited Mobility",4,None,Teacher,No,120/80,37.6°C,Osteoarthritis,"Analgesics, Physical Therapy"
-Kozhikode,Male,35,23,None,"Fatigue, Headache, Runny Nose",3,None,Salesperson,No,115/75,37.1°C,Common Cold,"Rest, Plenty of Fluids"
-Alappuzha,Female,49,28,Pollen,"Sneezing, Itchy Eyes",7,None,Nurse,No,130/90,37.4°C,Allergic Rhinitis,Antihistamines
-Ernakulam,Male,36,25,None,"Abdominal Pain, Nausea, Vomiting",2,None,Pharmacist,No,130/90,37.5°C,Gastritis,"Antacids, Proton Pump Inhibitors"
-Malappuram,Female,54,24,None,"Joint Pain, Limited Mobility",4,None,Doctor,No,115/75,37.1°C,Osteoarthritis,"Analgesics, Physical Therapy"
-Kottayam,Male,40,26,None,"Fever, Sore Throat, Cough",5,None,Student,No,130/90,37.6°C,Pharyngitis,"Analgesics, Antibiotics"
-Kannur,Female,60,29,Dust,"Sneezing, Itchy Eyes",3,None,Nurse,No,120/80,37.4°C,Allergic Rhinitis,Antihistamines
-Pathanamthitta,Male,37,27,None,"Fatigue, Shortness of Breath",7,None,Pharmacist,No,115/75,37.0°C,Asthma,"Bronchodilators, Inhalers"
-Kasaragod,Female,52,28,None,"Cough, Sore Throat, Runny Nose",5,None,Accountant,No,125/80,36.8°C,Upper Respiratory Infection,"Rest, Fluids, Cough Syrup"
-Idukki,Male,34,24,None,"Fatigue, Headache, Runny Nose",6,None,IT Professional,No,130/90,37.5°C,Common Cold,"Rest, Plenty of Fluids"
-Palakkad,Female,48,27,None,"Joint Pain, Limited Mobility",4,None,Doctor,No,110/70,37.0°C,Osteoarthritis,"Analgesics, Physical Therapy"
-Kollam,Male,41,25,Dust,"Sneezing, Itchy Eyes",7,None,Teacher,No,125/80,36.8°C,Allergic Rhinitis,Antihistamines
-Thiruvananthapuram,Female,61,29,None,"Fatigue, Shortness of Breath",7,None,IT Professional,No,120/80,37.2°C,Asthma,"Bronchodilators, Inhalers"
-Wayanad,Male,38,27,None,"Abdominal Pain, Nausea, Vomiting",2,None,Salesperson,No,130/90,37.4°C,Gastritis,"Antacids, Proton Pump Inhibitors"
-Thrissur,Female,62,32,None,"Joint Pain, Limited Mobility",4,None,Nurse,No,120/80,37.6°C,Osteoarthritis,"Analgesics, Physical Therapy"
-Kozhikode,Male,36,23,None,"Fever, Sore Throat, Cough",5,None,Pharmacist,No,115/75,37.1°C,Pharyngitis,"Analgesics, Antibiotics"
-Alappuzha,Female,50,28,Pollen,"Sneezing, Itchy Eyes",7,None,Doctor,No,130/90,37.4°C,Allergic Rhinitis,Antihistamines
-Ernakulam,Male,37,25,None,"Abdominal Pain, Nausea, Vomiting",2,None,Salesperson,No,130/90,37.5°C,Gastritis,"Antacids, Proton Pump Inhibitors"
-Malappuram,Female,55,24,None,"Joint Pain, Limited Mobility",4,None,Nurse,No,115/75,37.1°C,Osteoarthritis,"Analgesics, Physical Therapy"
-Kottayam,Male,42,26,None,"Fatigue, Headache, Runny Nose",6,None,Doctor,No,130/90,37.6°C,Common Cold,"Rest, Plenty of Fluids"
-Kannur,Female,61,29,Dust,"Sneezing, Itchy Eyes",3,None,Pharmacist,No,120/80,37.4°C,Allergic Rhinitis,Antihistamines
-Pathanamthitta,Male,38,27,None,"Fatigue, Shortness of Breath",7,None,IT Professional,No,115/75,37.0°C,Asthma,"Bronchodilators, Inhalers"
-Kasaragod,Female,53,28,None,"Cough, Sore Throat, Runny Nose",5,None,Accountant,No,125/80,36.8°C,Upper Respiratory Infection,"Rest, Fluids, Cough Syrup"
-Idukki,Male,35,24,None,"Fatigue, Headache, Runny Nose",6,None,Nurse,No,130/90,37.5°C,Common Cold,"Rest, Plenty of Fluids"
-Palakkad,Female,49,27,None,"Joint Pain, Limited Mobility",4,None,Pharmacist,No,110/70,37.0°C,Osteoarthritis,"Analgesics, Physical Therapy"
-Kollam,Male,43,25,Dust,"Sneezing, Itchy Eyes",7,None,Salesperson,No,125/80,36.8°C,Allergic Rhinitis,Antihistamines
-Thiruvananthapuram,Female,62,29,None,"Fatigue, Shortness of Breath",7,None,IT Professional,No,120/80,37.2°C,Asthma,"Bronchodilators, Inhalers"
-Wayanad,Male,39,27,None,"Abdominal Pain, Nausea, Vomiting",2,None,Nurse,No,130/90,37.4°C,Gastritis,"Antacids, Proton Pump Inhibitors"
-Thrissur,Female,63,32,None,"Joint Pain, Limited Mobility",4,None,Doctor,No,120/80,37.6°C,Osteoarthritis,"Analgesics, Physical Therapy"
-Kozhikode,Male,37,23,None,"Fever, Sore Throat, Cough",5,None,Pharmacist,No,115/75,37.1°C,Pharyngitis,"Analgesics, Antibiotics"
-Alappuzha,Female,51,28,Pollen,"Sneezing, Itchy Eyes",7,None,Accountant,No,130/90,37.4°C,Allergic Rhinitis,Antihistamines
-Ernakulam,Male,38,25,None,"Abdominal Pain, Nausea, Vomiting",2,None,Salesperson,No,130/90,37.5°C,Gastritis,"Antacids, Proton Pump Inhibitors"
-Malappuram,Female,56,24,None,"Joint Pain, Limited Mobility",4,None,Nurse,No,115/75,37.1°C,Osteoarthritis,"Analgesics, Physical Therapy"
-Kottayam,Male,44,26,None,"Fatigue, Headache, Runny Nose",6,None,Doctor,No,130/90,37.6°C,Common Cold,"Rest, Plenty of Fluids"
-Kannur,Female,62,29,Dust,"Sneezing, Itchy Eyes",3,None,Pharmacist,No,120/80,37.4°C,Allergic Rhinitis,Antihistamines
-Pathanamthitta,Male,39,27,None,"Fatigue, Shortness of Breath",7,None,IT Professional,No,115/75,37.0°C,Asthma,"Bronchodilators, Inhalers"
-Kasaragod,Female,54,28,None,"Cough, Sore Throat, Runny Nose",5,None,Accountant,No,125/80,36.8°C,Upper Respiratory Infection,"Rest, Fluids, Cough Syrup"
-Idukki,Male,36,24,None,"Fatigue, Headache, Runny Nose",6,None,Nurse,No,130/90,37.5°C,Common Cold,"Rest, Plenty of Fluids"
-Palakkad,Female,50,27,None,"Joint Pain, Limited Mobility",4,None,Pharmacist,No,110/70,37.0°C,Osteoarthritis,"Analgesics, Physical Therapy"
-Kollam,Male,45,25,Dust,"Sneezing, Itchy Eyes",7,None,Salesperson,No,125/80,36.8°C,Allergic Rhinitis,Antihistamines
-Thiruvananthapuram,Female,63,29,None,"Fatigue, Shortness of Breath",7,None,IT Professional,No,120/80,37.2°C,Asthma,"Bronchodilators, Inhalers"
-Wayanad,Male,40,27,None,"Abdominal Pain, Nausea, Vomiting",2,None,Nurse,No,130/90,37.4°C,Gastritis,"Antacids, Proton Pump Inhibitors"
-Thrissur,Female,64,32,None,"Joint Pain, Limited Mobility",4,None,Doctor,No,120/80,37.6°C,Osteoarthritis,"Analgesics, Physical Therapy"
-Kozhikode,Male,38,23,None,"Fever, Sore Throat, Cough",5,None,Pharmacist,No,115/75,37.1°C,Pharyngitis,"Analgesics, Antibiotics"
-Alappuzha,Female,52,28,Pollen,"Sneezing, Itchy Eyes",7,None,Accountant,No,130/90,37.4°C,Allergic Rhinitis,Antihistamines
-Ernakulam,Male,39,25,None,"Abdominal Pain, Nausea, Vomiting",2,None,Salesperson,No,130/90,37.5°C,Gastritis,"Antacids, Proton Pump Inhibitors"
-Malappuram,Female,57,24,None,"Joint Pain, Limited Mobility",4,None,Nurse,No,115/75,37.1°C,Osteoarthritis,"Analgesics, Physical Therapy"
-Kottayam,Male,45,26,None,"Fatigue, Headache, Runny Nose",6,None,Doctor,No,130/90,37.6°C,Common Cold,"Rest, Plenty of Fluids"
-Kannur,Female,63,29,Dust,"Sneezing, Itchy Eyes",3,None,Pharmacist,No,120/80,37.4°C,Allergic Rhinitis,Antihistamines
-Pathanamthitta,Male,40,27,None,"Fatigue, Shortness of Breath",7,None,IT Professional,No,115/75,37.0°C,Asthma,"Bronchodilators, Inhalers"
-Kasaragod,Female,55,28,None,"Cough, Sore Throat, Runny Nose",5,None,Accountant,No,125/80,36.8°C,Upper Respiratory Infection,"Rest, Fluids, Cough Syrup"
-Idukki,Male,37,24,None,"Fatigue, Headache, Runny Nose",6,None,Nurse,No,130/90,37.5°C,Common Cold,"Rest, Plenty of Fluids"
-Palakkad,Female,51,27,None,"Joint Pain, Limited Mobility",4,None,Pharmacist,No,110/70,37.0°C,Osteoarthritis,"Analgesics, Physical Therapy"
-Kollam,Male,46,25,Dust,"Sneezing, Itchy Eyes",7,None,Salesperson,No,125/80,36.8°C,Allergic Rhinitis,Antihistamines
-Thiruvananthapuram,Female,64,29,None,"Fatigue, Shortness of Breath",7,None,IT Professional,No,120/80,37.2°C,Asthma,"Bronchodilators, Inhalers"
-Wayanad,Male,41,27,None,"Abdominal Pain, Nausea, Vomiting",2,None,Nurse,No,130/90,37.4°C,Gastritis,"Antacids, Proton Pump Inhibitors"
-Thrissur,Female,65,32,None,"Joint Pain, Limited Mobility",4,None,Doctor,No,120/80,37.6°C,Osteoarthritis,"Analgesics, Physical Therapy"
-Kozhikode,Male,39,23,None,"Fever, Sore Throat, Cough",5,None,Pharmacist,No,115/75,37.1°C,Pharyngitis,"Analgesics, Antibiotics"
-Alappuzha,Female,53,28,Pollen,"Sneezing, Itchy Eyes",7,None,Accountant,No,130/90,37.4°C,Allergic Rhinitis,Antihistamines
-Ernakulam,Male,40,25,None,"Abdominal Pain, Nausea, Vomiting",2,None,Salesperson,No,130/90,37.5°C,Gastritis,"Antacids, Proton Pump Inhibitors"
-Malappuram,Female,58,24,None,"Joint Pain, Limited Mobility",4,None,Nurse,No,115/75,37.1°C,Osteoarthritis,"Analgesics, Physical Therapy"
-Kottayam,Male,46,26,None,"Fatigue, Headache, Runny Nose",6,None,Doctor,No,130/90,37.6°C,Common Cold,"Rest, Plenty of Fluids"
-Kannur,Female,64,29,Dust,"Sneezing, Itchy Eyes",3,None,Pharmacist,No,120/80,37.4°C,Allergic Rhinitis,Antihistamines
-Pathanamthitta,Male,41,27,None,"Fatigue, Shortness of Breath",7,None,IT Professional,No,115/75,37.0°C,Asthma,"Bronchodilators, Inhalers"
-Kasaragod,Female,56,28,None,"Cough, Sore Throat, Runny Nose",5,None,Accountant,No,125/80,36.8°C,Upper Respiratory Infection,"Rest, Fluids, Cough Syrup"
-Idukki,Male,38,24,None,"Fatigue, Headache, Runny Nose",6,None,Nurse,No,130/90,37.5°C,Common Cold,"Rest, Plenty of Fluids"
-Palakkad,Female,52,27,None,"Joint Pain, Limited Mobility",4,None,Pharmacist,No,110/70,37.0°C,Osteoarthritis,"Analgesics, Physical Therapy"
-Kollam,Male,47,25,Dust,"Sneezing, Itchy Eyes",7,None,Salesperson,No,125/80,36.8°C,Allergic Rhinitis,Antihistamines
-Thiruvananthapuram,Female,65,29,None,"Fatigue, Shortness of Breath",7,None,IT Professional,No,120/80,37.2°C,Asthma,"Bronchodilators, Inhalers"
-Wayanad,Male,42,27,None,"Abdominal Pain, Nausea, Vomiting",2,None,Nurse,No,130/90,37.4°C,Gastritis,"Antacids, Proton Pump Inhibitors"
-Thrissur,Female,66,32,None,"Joint Pain, Limited Mobility",4,None,Doctor,No,120/80,37.6°C,Osteoarthritis,"Analgesics, Physical Therapy"
-Kozhikode,Male,40,23,None,"Fever, Sore Throat, Cough",5,None,Pharmacist,No,115/75,37.1°C,Pharyngitis,"Analgesics, Antibiotics"
-Alappuzha,Female,54,28,Pollen,"Sneezing, Itchy Eyes",7,None,Accountant,No,130/90,37.4°C,Allergic Rhinitis,Antihistamines
-Ernakulam,Male,41,25,None,"Abdominal Pain, Nausea, Vomiting",2,None,Salesperson,No,130/90,37.5°C,Gastritis,"Antacids, Proton Pump Inhibitors"
-Malappuram,Female,59,24,None,"Joint Pain, Limited Mobility",4,None,Nurse,No,115/75,37.1°C,Osteoarthritis,"Analgesics, Physical Therapy"
-Kottayam,Male,47,26,None,"Fatigue, Headache, Runny Nose",6,None,Doctor,No,130/90,37.6°C,Common Cold,"Rest, Plenty of Fluids"
-Kannur,Female,65,29,Dust,"Sneezing, Itchy Eyes",3,None,Pharmacist,No,120/80,37.4°C,Allergic Rhinitis,Antihistamines
-Pathanamthitta,Male,42,27,None,"Fatigue, Shortness of Breath",7,None,IT Professional,No,115/75,37.0°C,Asthma,"Bronchodilators, Inhalers"
-Kasaragod,Female,57,28,None,"Cough, Sore Throat, Runny Nose",5,None,Accountant,No,125/80,36.8°C,Upper Respiratory Infection,"Rest, Fluids, Cough Syrup"
-Idukki,Male,39,24,None,"Fatigue, Headache, Runny Nose",6,None,Nurse,No,130/90,37.5°C,Common Cold,"Rest, Plenty of Fluids"
-Palakkad,Female,53,27,None,"Joint Pain, Limited Mobility",4,None,Pharmacist,No,110/70,37.0°C,Osteoarthritis,"Analgesics, Physical Therapy"
-Kollam,Male,48,25,Dust,"Sneezing, Itchy Eyes",7,None,Salesperson,No,125/80,36.8°C,Allergic Rhinitis,Antihistamines
-Thiruvananthapuram,Female,66,29,None,"Fatigue, Shortness of Breath",7,None,IT Professional,No,120/80,37.2°C,Asthma,"Bronchodilators, Inhalers"
-Wayanad,Male,43,27,None,"Abdominal Pain, Nausea, Vomiting",2,None,Nurse,No,130/90,37.4°C,Gastritis,"Antacids, Proton Pump Inhibitors"
-Thrissur,Female,67,32,None,"Joint Pain, Limited Mobility",4,None,Doctor,No,120/80,37.6°C,Osteoarthritis,"Analgesics, Physical Therapy"
-Kozhikode,Male,41,23,None,"Fever, Sore Throat, Cough",5,None,Pharmacist,No,115/75,37.1°C,Pharyngitis,"Analgesics, Antibiotics"
-Alappuzha,Female,55,28,Pollen,"Sneezing, Itchy Eyes",7,None,Accountant,No,130/90,37.4°C,Allergic Rhinitis,Antihistamines
-Ernakulam,Male,42,25,None,"Abdominal Pain, Nausea, Vomiting",2,None,Salesperson,No,130/90,37.5°C,Gastritis,"Antacids, Proton Pump Inhibitors"
-Malappuram,Female,60,24,None,"Joint Pain, Limited Mobility",4,None,Nurse,No,115/75,37.1°C,Osteoarthritis,"Analgesics, Physical Therapy"
-Kottayam,Male,48,26,None,"Fatigue, Headache, Runny Nose",6,None,Doctor,No,130/90,37.6°C,Common Cold,"Rest, Plenty of Fluids"
-Kannur,Female,66,29,Dust,"Sneezing, Itchy Eyes",3,None,Pharmacist,No,120/80,37.4°C,Allergic Rhinitis,Antihistamines
-Pathanamthitta,Male,43,27,None,"Fatigue, Shortness of Breath",7,None,IT Professional,No,115/75,37.0°C,Asthma,"Bronchodilators, Inhalers"
-Kasaragod,Female,58,28,None,"Cough, Sore Throat, Runny Nose",5,None,Accountant,No,125/80,36.8°C,Upper Respiratory Infection,"Rest, Fluids, Cough Syrup"
-Idukki,Male,40,24,None,"Fatigue, Headache, Runny Nose",6,None,Nurse,No,130/90,37.5°C,Common Cold,"Rest, Plenty of Fluids"
-Palakkad,Female,54,27,None,"Joint Pain, Limited Mobility",4,None,Pharmacist,No,110/70,37.0°C,Osteoarthritis,"Analgesics, Physical Therapy"
-Kollam,Male,49,25,Dust,"Sneezing, Itchy Eyes",7,None,Salesperson,No,125/80,36.8°C,Allergic Rhinitis,Antihistamines
-Thiruvananthapuram,Female,67,29,None,"Fatigue, Shortness of Breath",7,None,IT Professional,No,120/80,37.2°C,Asthma,"Bronchodilators, Inhalers"
-Wayanad,Male,44,27,None,"Abdominal Pain, Nausea, Vomiting",2,None,Nurse,No,130/90,37.4°C,Gastritis,"Antacids, Proton Pump Inhibitors"
-Thrissur,Female,68,32,None,"Joint Pain, Limited Mobility",4,None,Doctor,No,120/80,37.6°C,Osteoarthritis,"Analgesics, Physical Therapy"
-Kozhikode,Male,42,23,None,"Fever, Sore Throat, Cough",5,None,Pharmacist,No,115/75,37.1°C,Pharyngitis,"Analgesics, Antibiotics"
-Alappuzha,Female,56,28,Pollen,"Sneezing, Itchy Eyes",7,None,Accountant,No,130/90,37.4°C,Allergic Rhinitis,Antihistamines
-Ernakulam,Male,43,25,None,"Abdominal Pain, Nausea, Vomiting",2,None,Salesperson,No,130/90,37.5°C,Gastritis,"Antacids, Proton Pump Inhibitors"
-Malappuram,Female,61,24,None,"Joint Pain, Limited Mobility",4,None,Nurse,No,115/75,37.1°C,Osteoarthritis,"Analgesics, Physical Therapy"
-Kottayam,Male,49,26,None,"Fatigue, Headache, Runny Nose",6,None,Doctor,No,130/90,37.6°C,Common Cold,"Rest, Plenty of Fluids"
-Kannur,Female,67,29,Dust,"Sneezing, Itchy Eyes",3,None,Pharmacist,No,120/80,37.4°C,Allergic Rhinitis,Antihistamines
-Pathanamthitta,Male,44,27,None,"Fatigue, Shortness of Breath",7,None,IT Professional,No,115/75,37.0°C,Asthma,"Bronchodilators, Inhalers"
-Kasaragod,Female,59,28,None,"Cough, Sore Throat, Runny Nose",5,None,Accountant,No,125/80,36.8°C,Upper Respiratory Infection,"Rest, Fluids, Cough Syrup"
-Idukki,Male,41,24,None,"Fatigue, Headache, Runny Nose",6,None,Nurse,No,130/90,37.5°C,Common Cold,"Rest, Plenty of Fluids"
-Palakkad,Female,55,27,None,"Joint Pain, Limited Mobility",4,None,Pharmacist,No,110/70,37.0°C,Osteoarthritis,"Analgesics, Physical Therapy"
-Kollam,Male,50,25,Dust,"Sneezing, Itchy Eyes",7,None,Salesperson,No,125/80,36.8°C,Allergic Rhinitis,Antihistamines
-Thiruvananthapuram,Female,68,29,None,"Fatigue, Shortness of Breath",7,None,IT Professional,No,120/80,37.2°C,Asthma,"Bronchodilators, Inhalers"
-Wayanad,Male,45,27,None,"Abdominal Pain, Nausea, Vomiting",2,None,Nurse,No,130/90,37.4°C,Gastritis,"Antacids, Proton Pump Inhibitors"
-Thrissur,Female,69,32,None,"Joint Pain, Limited Mobility",4,None,Doctor,No,120/80,37.6°C,Osteoarthritis,"Analgesics, Physical Therapy"
-Kozhikode,Male,43,23,None,"Fever, Sore Throat, Cough",5,None,Pharmacist,No,115/75,37.1°C,Pharyngitis,"Analgesics, Antibiotics"
-Alappuzha,Female,57,28,Pollen,"Sneezing, Itchy Eyes",7,None,Accountant,No,130/90,37.4°C,Allergic Rhinitis,Antihistamines
-Ernakulam,Male,44,25,None,"Abdominal Pain, Nausea, Vomiting",2,None,Salesperson,No,130/90,37.5°C,Gastritis,"Antacids, Proton Pump Inhibitors"
-Malappuram,Female,62,24,None,"Joint Pain, Limited Mobility",4,None,Nurse,No,115/75,37.1°C,Osteoarthritis,"Analgesics, Physical Therapy"
-Kottayam,Male,50,26,None,"Fatigue, Headache, Runny Nose",6,None,Doctor,No,130/90,37.6°C,Common Cold,"Rest, Plenty of Fluids"
-Kannur,Female,68,29,Dust,"Sneezing, Itchy Eyes",3,None,Pharmacist,No,120/80,37.4°C,Allergic Rhinitis,Antihistamines
-Pathanamthitta,Male,45,27,None,"Fatigue, Shortness of Breath",7,None,IT Professional,No,115/75,37.0°C,Asthma,"Bronchodilators, Inhalers"
-Kasaragod,Female,60,28,None,"Cough, Sore Throat, Runny Nose",5,None,Accountant,No,125/80,36.8°C,Upper Respiratory Infection,"Rest, Fluids, Cough Syrup"
-Idukki,Male,42,24,None,"Fatigue, Headache, Runny Nose",6,None,Nurse,No,130/90,37.5°C,Common Cold,"Rest, Plenty of Fluids"
-Palakkad,Female,56,27,None,"Joint Pain, Limited Mobility",4,None,Pharmacist,No,110/70,37.0°C,Osteoarthritis,"Analgesics, Physical Therapy"
-Kollam,Male,51,25,Dust,"Sneezing, Itchy Eyes",7,None,Salesperson,No,125/80,36.8°C,Allergic Rhinitis,Antihistamines
-Thiruvananthapuram,Female,69,29,None,"Fatigue, Shortness of Breath",7,None,IT Professional,No,120/80,37.2°C,Asthma,"Bronchodilators, Inhalers"
-Wayanad,Male,46,27,None,"Abdominal Pain, Nausea, Vomiting",2,None,Nurse,No,130/90,37.4°C,Gastritis,"Antacids, Proton Pump Inhibitors"
-Thrissur,Female,70,32,None,"Joint Pain, Limited Mobility",4,None,Doctor,No,120/80,37.6°C,Osteoarthritis,"Analgesics, Physical Therapy"
-Kozhikode,Male,44,23,None,"Fever, Sore Throat, Cough",5,None,Pharmacist,No,115/75,37.1°C,Pharyngitis,"Analgesics, Antibiotics"
-Alappuzha,Female,58,28,Pollen,"Sneezing, Itchy Eyes",7,None,Accountant,No,130/90,37.4°C,Allergic Rhinitis,Antihistamines
-Ernakulam,Male,45,25,None,"Abdominal Pain, Nausea, Vomiting",2,None,Salesperson,No,130/90,37.5°C,Gastritis,"Antacids, Proton Pump Inhibitors"
-Malappuram,Female,63,24,None,"Joint Pain, Limited Mobility",4,None,Nurse,No,115/75,37.1°C,Osteoarthritis,"Analgesics, Physical Therapy"
-Kottayam,Male,51,26,None,"Fatigue, Headache, Runny Nose",6,None,Doctor,No,130/90,37.6°C,Common Cold,"Rest, Plenty of Fluids"
-Kannur,Female,70,29,Dust,"Sneezing, Itchy Eyes",3,None,Pharmacist,No,120/80,37.4°C,Allergic Rhinitis,Antihistamines
-Pathanamthitta,Male,46,27,None,"Fatigue, Shortness of Breath",7,None,IT Professional,No,115/75,37.0°C,Asthma,"Bronchodilators, Inhalers"
-Kasaragod,Female,61,28,None,"Cough, Sore Throat, Runny Nose",5,None,Accountant,No,125/80,36.8°C,Upper Respiratory Infection,"Rest, Fluids, Cough Syrup"
-Idukki,Male,43,24,None,"Fatigue, Headache, Runny Nose",6,None,Nurse,No,130/90,37.5°C,Common Cold,"Rest, Plenty of Fluids"
-Palakkad,Female,57,27,None,"Joint Pain, Limited Mobility",4,None,Pharmacist,No,110/70,37.0°C,Osteoarthritis,"Analgesics, Physical Therapy"
-Kollam,Male,52,25,Dust,"Sneezing, Itchy Eyes",7,None,Salesperson,No,125/80,36.8°C,Allergic Rhinitis,Antihistamines
-Thiruvananthapuram,Female,71,29,None,"Fatigue, Shortness of Breath",7,None,IT Professional,No,120/80,37.2°C,Asthma,"Bronchodilators, Inhalers"
-Wayanad,Male,47,27,None,"Abdominal Pain, Nausea, Vomiting",2,None,Nurse,No,130/90,37.4°C,Gastritis,"Antacids, Proton Pump Inhibitors"
-Thrissur,Female,72,32,None,"Joint Pain, Limited Mobility",4,None,Doctor,No,120/80,37.6°C,Osteoarthritis,"Analgesics, Physical Therapy"
-Kozhikode,Male,45,23,None,"Fever, Sore Throat, Cough",5,None,Pharmacist,No,115/75,37.1°C,Pharyngitis,"Analgesics, Antibiotics"
-Alappuzha,Female,59,28,Pollen,"Sneezing, Itchy Eyes",7,None,Accountant,No,130/90,37.4°C,Allergic Rhinitis,Antihistamines
-Ernakulam,Male,46,25,None,"Abdominal Pain, Nausea, Vomiting",2,None,Salesperson,No,130/90,37.5°C,Gastritis,"Antacids, Proton Pump Inhibitors"
-Malappuram,Female,64,24,None,"Joint Pain, Limited Mobility",4,None,Nurse,No,115/75,37.1°C,Osteoarthritis,"Analgesics, Physical Therapy"
-Kottayam,Male,52,26,None,"Fatigue, Headache, Runny Nose",6,None,Doctor,No,130/90,37.6°C,Common Cold,"Rest, Plenty of Fluids"
-Kannur,Female,73,29,Dust,"Sneezing, Itchy Eyes",3,None,Pharmacist,No,120/80,37.4°C,Allergic Rhinitis,Antihistamines
-Pathanamthitta,Male,47,27,None,"Fatigue, Shortness of Breath",7,None,IT Professional,No,115/75,37.0°C,Asthma,"Bronchodilators, Inhalers"
-Kasaragod,Female,62,28,None,"Cough, Sore Throat, Runny Nose",5,None,Accountant,No,125/80,36.8°C,Upper Respiratory Infection,"Rest, Fluids, Cough Syrup"
-Idukki,Male,44,24,None,"Fatigue, Headache, Runny Nose",6,None,Nurse,No,130/90,37.5°C,Common Cold,"Rest, Plenty of Fluids"
-Palakkad,Female,58,27,None,"Joint Pain, Limited Mobility",4,None,Pharmacist,No,110/70,37.0°C,Osteoarthritis,"Analgesics, Physical Therapy"
-Kollam,Male,53,25,Dust,"Sneezing, Itchy Eyes",7,None,Salesperson,No,125/80,36.8°C,Allergic Rhinitis,Antihistamines
-Thiruvananthapuram,Female,74,29,None,"Fatigue, Shortness of Breath",7,None,IT Professional,No,120/80,37.2°C,Asthma,"Bronchodilators, Inhalers"
-Wayanad,Male,48,27,None,"Abdominal Pain, Nausea, Vomiting",2,None,Nurse,No,130/90,37.4°C,Gastritis,"Antacids, Proton Pump Inhibitors"
-Thrissur,Female,73,32,None,"Joint Pain, Limited Mobility",4,None,Doctor,No,120/80,37.6°C,Osteoarthritis,"Analgesics, Physical Therapy"
-Kozhikode,Male,46,23,None,"Fever, Sore Throat, Cough",5,None,Pharmacist,No,115/75,37.1°C,Pharyngitis,"Analgesics, Antibiotics"
-Alappuzha,Female,60,28,Pollen,"Sneezing, Itchy Eyes",7,None,Accountant,No,130/90,37.4°C,Allergic Rhinitis,Antihistamines
-Ernakulam,Male,47,25,None,"Abdominal Pain, Nausea, Vomiting",2,None,Salesperson,No,130/90,37.5°C,Gastritis,"Antacids, Proton Pump Inhibitors"
-Malappuram,Female,65,24,None,"Joint Pain, Limited Mobility",4,None,Nurse,No,115/75,37.1°C,Osteoarthritis,"Analgesics, Physical Therapy"
-Kottayam,Male,53,26,None,"Fatigue, Headache, Runny Nose",6,None,Doctor,No,130/90,37.6°C,Common Cold,"Rest, Plenty of Fluids"
-Kannur,Female,75,29,Dust,"Sneezing, Itchy Eyes",3,None,Pharmacist,No,120/80,37.4°C,Allergic Rhinitis,Antihistamines
-Pathanamthitta,Male,48,27,None,"Fatigue, Shortness of Breath",7,None,IT Professional,No,115/75,37.0°C,Asthma,"Bronchodilators, Inhalers"
-Kasaragod,Female,63,28,None,"Cough, Sore Throat, Runny Nose",5,None,Accountant,No,125/80,36.8°C,Upper Respiratory Infection,"Rest, Fluids, Cough Syrup"
-Idukki,Male,45,24,None,"Fatigue, Headache, Runny Nose",6,None,Nurse,No,130/90,37.5°C,Common Cold,"Rest, Plenty of Fluids"
-Palakkad,Female,59,27,None,"Joint Pain, Limited Mobility",4,None,Pharmacist,No,110/70,37.0°C,Osteoarthritis,"Analgesics, Physical Therapy"
-Kollam,Male,54,25,Dust,"Sneezing, Itchy Eyes",7,None,Salesperson,No,125/80,36.8°C,Allergic Rhinitis,Antihistamines
-Thiruvananthapuram,Female,76,29,None,"Fatigue, Shortness of Breath",7,None,IT Professional,No,120/80,37.2°C,Asthma,"Bronchodilators, Inhalers"
-Wayanad,Male,49,27,None,"Abdominal Pain, Nausea, Vomiting",2,None,Nurse,No,130/90,37.4°C,Gastritis,"Antacids, Proton Pump Inhibitors"
+Location,Gender,Age,BMI,Symptoms,Duration of Symptoms,Smoker,Blood Pressure,Temperature,Risk
+1,1,3,20,3,5,0,1,2,0
+2,0,2,19,6,3,1,3,1,0
+3,1,4,21,2,7,0,2,3,0
+4,1,1,20,1,2,0,1,1,0
+1,0,3,19,7,4,1,2,2,0
+2,1,2,20,6,6,0,1,3,0
+3,0,4,21,3,3,1,3,1,0
+4,0,1,19,1,7,0,2,2,0
+1,1,3,20,7,2,0,1,3,0
+2,0,2,19,2,4,1,2,1,0
+3,1,4,21,6,6,0,3,2,0
+4,1,1,20,3,3,0,1,3,0
+1,0,3,19,1,7,1,2,1,0
+2,1,2,20,7,2,0,1,2,0
+3,0,4,21,2,4,1,3,3,0
+4,0,1,19,6,6,0,2,1,0
+1,1,3,20,3,3,0,1,2,0
+2,0,2,19,1,7,1,2,3,0
+3,1,4,21,7,2,0,3,1,0
+4,1,1,20,2,4,0,1,2,0
+1,0,3,19,6,6,0,2,3,0
+2,1,2,20,3,3,1,1,1,0
+3,0,4,21,1,7,0,3,2,0
+4,0,1,19,7,2,0,2,3,0
+1,1,3,20,2,4,1,1,1,0
+2,0,2,19,6,6,0,2,2,0
+3,1,4,21,3,3,0,3,3,0
+4,1,1,20,1,7,0,1,1,0
+1,0,3,19,7,2,1,2,2,0
+2,1,2,20,2,4,0,1,3,0
+3,0,4,21,6,6,0,3,1,0
+4,0,1,19,3,3,0,2,2,0
+1,1,3,20,1,7,0,1,3,0
+2,0,2,19,7,2,1,2,1,0
+3,1,4,21,2,4,0,3,2,0
+4,1,1,20,6,6,0,1,3,0
+1,0,3,19,3,3,0,2,1,0
+2,1,2,20,1,7,1,1,2,0
+3,0,4,21,7,2,0,3,3,0
+4,0,1,19,2,4,0,2,1,0
+1,1,3,20,6,6,0,1,2,0
+2,0,2,19,3,3,1,2,3,0
+3,1,4,21,1,7,0,3,1,0
+4,1,1,20,7,2,0,1,2,0
+1,0,3,19,2,4,1,2,3,0
+2,1,2,20,6,6,0,1,1,0
+3,0,4,21,3,3,0,3,2,0
+4,0,1,19,1,7,0,2,1,0
+1,1,3,20,7,2,0,1,2,0
+2,0,2,19,2,4,1,2,3,0
+3,1,4,21,6,6,0,3,1,0
+4,1,1,20,3,3,0,1,3,0
+1,0,3,19,1,7,1,2,1,0
+2,1,2,20,7,2,0,1,2,0
+3,0,4,21,2,4,1,3,3,0
+4,0,1,19,6,6,0,2,1,0
+1,1,3,20,3,3,0,1,2,0
+2,0,2,19,1,7,1,2,3,0
+3,1,4,21,7,2,0,3,1,0
+4,1,1,20,2,4,0,1,3,0
+1,1,3,21,4,10,0,2,3,1
+2,0,2,20,7,12,1,3,2,1
+3,1,4,22,2,9,0,2,3,1
+4,1,1,21,6,8,0,3,2,1
+1,0,3,20,7,10,1,2,3,1
+2,1,2,21,6,13,0,3,2,1
+3,0,4,22,4,9,1,2,3,1
+4,0,1,20,2,15,0,3,2,1
+1,1,3,21,7,8,0,2,3,1
+2,0,2,20,2,10,1,3,2,1
+3,1,4,22,6,13,0,2,3,1
+4,1,1,21,4,9,0,3,2,1
+1,0,3,20,2,15,1,2,3,1
+2,1,2,21,7,8,0,3,2,1
+3,0,4,22,4,10,1,2,3,1
+4,0,1,20,6,13,0,3,2,1
+1,1,3,21,7,9,0,2,3,1
+2,0,2,20,2,15,1,3,2,1
+3,1,4,22,6,13,0,2,3,1
+4,1,1,21,4,8,0,3,2,1
+1,0,3,20,2,10,1,2,3,1
+2,1,2,21,7,13,0,3,2,1
+3,0,4,22,4,9,1,2,3,1
+4,0,1,20,6,15,0,3,2,1
+1,1,3,21,7,8,0,2,3,1
+2,0,2,20,2,10,1,3,2,1
+3,1,4,22,6,13,0,2,3,1
+4,1,1,21,4,9,0,3,2,1
+1,0,3,20,2,15,1,2,3,1
+2,1,2,21,7,8,0,3,2,1
+3,0,4,22,4,10,1,2,3,1
+4,0,1,20,6,13,0,3,2,1
+1,1,3,21,7,9,0,2,3,1
+2,0,2,20,2,15,1,3,2,1
+3,1,4,22,6,13,0,2,3,1
+4,1,1,21,4,8,0,3,2,1
+1,0,3,20,2,10,1,2,3,1
+2,1,2,21,7,13,0,3,2,1
+3,0,4,22,4,9,1,2,3,1
+4,0,1,20,6,15,0,3,2,1
+1,1,3,21,7,8,0,2,3,1
+2,0,2,20,2,10,1,3,2,1
+3,1,4,22,6,13,0,2,3,1
+4,1,1,21,4,9,0,3,2,1
+1,0,3,20,2,15,1,2,3,1
+2,1,2,21,7,8,0,3,2,1
+3,0,4,22,4,10,1,2,3,1
+4,0,1,20,6,13,0,3,2,1
+1,1,3,21,7,9,0,2,3,1
+2,0,2,20,2,15,1,3,2,1
+3,1,4,22,6,13,0,2,3,1
+4,1,1,21,4,8,0,3,2,1
+1,0,3,20,2,10,1,2,3,1
+2,1,2,21,7,13,0,3,2,1
+3,0,4,22,4,9,1,2,3,1
+4,0,1,20,6,15,0,3,2,1
+1,1,3,21,7,8,0,2,3,1
+2,0,2,20,2,10,1,3,2,1
+3,1,4,22,4,13,0,2,3,1
+4,1,1,21,6,9,0,3,2,1
+1,1,3,21,4,21,0,3,3,2
+2,0,2,20,7,25,1,3,3,2
+3,1,4,22,2,28,0,3,3,2
+4,1,1,21,6,17,0,3,3,2
+1,0,3,20,7,19,1,3,3,2
+2,1,2,21,6,24,0,3,3,2
+3,0,4,22,4,15,1,3,3,2
+4,0,1,20,2,20,0,3,3,2
+1,1,3,21,7,17,0,3,3,2
+2,0,2,20,2,23,1,3,3,2
+3,1,4,22,6,16,0,3,3,2
+4,1,1,21,4,22,0,3,3,2
+1,0,3,20,2,19,1,3,3,2
+2,1,2,21,7,17,0,3,3,2
+3,0,4,22,4,20,1,3,3,2
+4,0,1,20,6,23,0,3,3,2
+1,1,3,21,7,18,0,3,3,2
+2,0,2,20,2,19,1,3,3,2
+3,1,4,22,6,24,0,3,3,2
+4,1,1,21,4,21,0,3,3,2
+1,0,3,20,2,20,1,3,3,2
+2,1,2,21,7,16,0,3,3,2
+3,0,4,22,4,23,1,3,3,2
+4,0,1,20,6,18,0,3,3,2
+1,1,3,21,7,20,0,3,3,2
+2,0,2,20,2,22,1,3,3,2
+3,1,4,22,6,17,0,3,3,2
+4,1,1,21,4,24,0,3,3,2
+1,0,3,20,2,21,1,3,3,2
+2,1,2,21,7,18,0,3,3,2
+3,0,4,22,4,20,1,3,3,2
+4,0,1,20,6,23,0,3,3,2
+1,1,3,21,7,19,0,3,3,2
+2,0,2,20,2,17,1,3,3,2
+3,1,4,22,6,20,0,3,3,2
+4,1,1,21,4,22,0,3,3,2
+1,0,3,20,2,23,1,3,3,2
+2,1,2,21,7,19,0,3,3,2
+3,0,4,22,4,21,1,3,3,2
+4,0,1,20,6,17,0,3,3,2
+1,1,3,21,7,24,0,3,3,2
+2,0,2,20,2,20,1,3,3,2
+3,1,4,22,6,19,0,3,3,2
+4,1,1,21,4,23,0,3,3,2
+1,0,3,20,2,22,1,3,3,2
+2,1,2,21,7,18,0,3,3,2
+3,0,4,22,4,24,1,3,3,2
+4,0,1,20,6,19,0,3,3,2
+1,1,3,21,7,23,0,3,3,2
+2,0,2,20,2,21,1,3,3,2
+3,1,4,22,6,17,0,3,3,2
+4,1,1,21,4,20,0,3,3,2
+1,0,3,20,2,24,1,3,3,2
+2,1,2,21,7,19,0,3,3,2
+3,0,4,22,4,23,1,3,3,2
+4,0,1,20,6,18,0,3,3,2
+1,1,3,21,7,22,0,3,3,2
+2,0,2,20,2,20,1,3,3,2
+3,1,4,22,6,19,0,3,3,2
+4,1,1,21,4,23,0,3,3,2
