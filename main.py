@@ -11,6 +11,8 @@ from backend.eye_check import router as eye
 from backend.texttoAIvideo import router as aivideo
 from backend.throat_check import router as throat
 from backend.disease_prediction import router as disease
+from backend.test2 import route_doc_narrate as doc_narrate
+
 
 app = FastAPI()
 
@@ -32,6 +34,7 @@ app.include_router(aivideo)
 app.include_router(throat)
 app.include_router(disease)
 app.include_router(skin)
+app.include_router(doc_narrate)
 # include other API routers as needed
 
 if __name__ == "__main__":

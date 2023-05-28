@@ -5,7 +5,7 @@ route_doc_narrate = APIRouter()
 
 
 response_file_path = "Local_storage/Narration/response.txt"
-question_file_path = "Local_storage/Narration/question.txt"
+question_file_path = "Local_storage/Narration/narration.txt"
 previous_response = ""
 question_counter = 0
 questions = [
@@ -64,7 +64,7 @@ async def check_for_changes(completion_event):
 async def process_questionnaire(completion_event):
     return await check_for_changes(completion_event)
 
-@route_doc_narrate.post("/start-questionnaire")
+@route_doc_narrate.get("/start-questionnaire")
 async def start_questionnaire(background_tasks: BackgroundTasks):
     completion_event = asyncio.Event()
     loop = asyncio.get_event_loop()

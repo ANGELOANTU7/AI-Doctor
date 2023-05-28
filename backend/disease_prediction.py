@@ -32,6 +32,10 @@ async def process_message():
             ]
         )
     subtext = "As an AI language model, I cannot predict or provide medical advice or diagnosis."
+    subtext1="As an AI language model, I cannot provide diagnosis for medical conditions or prescribe medical treatment. It is strongly advised to consult a qualified healthcare professional who can provide proper medical diagnosis and advice."
+    subtext2="As an AI language model, I cannot provide medical advice or diagnose diseases for individuals. "
     new = response.choices[0].message.content.replace(subtext, "")
+    new = new.replace(subtext1, "")
+    new=new.replace(subtext2,"")
 
     print(new)
