@@ -5,6 +5,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from backend.test2 import route_doc_narrate as doc_narrate
 from backend.feedAnalyze import route_feed_analysis as feed_analysis
 from backend.patientData import patient_route as patient
+from backend.gen_prescription import router as pres
 
 app = FastAPI()
 
@@ -18,9 +19,10 @@ app.add_middleware(
 )
 
 
-app.include_router(feed_analysis)
-app.include_router(patient)
-app.include_router(doc_narrate)
+# app.include_router(feed_analysis)
+# app.include_router(patient)
+# app.include_router(doc_narrate)
+app.include_router(pres)
 # include other API routers as needed
 
 if __name__ == "__main__":

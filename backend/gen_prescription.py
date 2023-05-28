@@ -58,6 +58,19 @@ def generate_prescription(disease:str , symptom:str):
     predicted_disease = model.predict(X_symptom)
 
     if predicted_disease[0] == disease:
+
+        data = prescriptions[diseases.index(disease)]
+
+        filename = "Local_storage\prescription\prescription.txt"
+
+        with open(filename, "w") as file:
+            file.write(data)
+
+        
+        print("Data written to file:", filename)
+
+
+
         return {"prescription": prescriptions[diseases.index(disease)]}
     else:
         return {"message": "Prescription not found for the given disease and symptom."}

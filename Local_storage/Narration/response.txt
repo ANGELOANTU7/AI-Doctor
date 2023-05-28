@@ -1,1 +1,5 @@
+<<<<<<< Updated upstream
 .Hello, my name is Angela. What is your name?
+=======
+s
+>>>>>>> Stashed changes
