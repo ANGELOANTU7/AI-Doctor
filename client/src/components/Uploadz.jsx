@@ -3,7 +3,12 @@ import axios from 'axios';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
+
 const Uploadz = () => {
+
+  const API_URL = 'http://192.168.237.75:8081';
+
+
   const [name, setName] = useState('');
   const [age, setAge] = useState('');
   const [gender, setGender] = useState('');
@@ -51,11 +56,11 @@ const Uploadz = () => {
     formData.append('file', file);
 
     try {
-      const patientDataResponse = await axios.post('http://192.168.142.73:8023/patient-data', formData);
+      const patientDataResponse = await axios.post(`${API_URL}/patient-data`, formData);
       console.log('Patient Data API Response:', patientDataResponse.data);
       // Handle patient data API response here
 
-      const pdftotextResponse = await axios.get('http://192.168.142.73:8023/pdftotext');
+      const pdftotextResponse = await axios.get(`${API_URL}/pdftotext`);
       console.log('pdftotext API Response:', pdftotextResponse.data);
       // Handle pdftotext API response here
     } catch (error) {
@@ -170,14 +175,19 @@ const Uploadz = () => {
           </label>
         </div>
         <div className="flex justify-end">
-          <Link to="/consult">
+          
           <button
             type="submit"
             className="bg-emerald-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
           >
             Submit
           </button>
+          <Link to="/webcam">
+            <button className='bg-emerald-500 hover:bg-blue-700 text-white font-bold py-2 px-4 ml-4 rounded focus:outline-none focus:shadow-outline'>
+              Next
+            </button>
           </Link>
+         
         </div>
       </motion.form>
     </div>

@@ -3,8 +3,9 @@ import { motion } from 'framer-motion';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 
-const API_URL = 'http://192.168.237.75:8081'
-const WebcamRecorder = () => {
+const API_URL = 'http://192.168.237.75:8081';
+
+const Webcam = () => {
   const videoRef = useRef(null);
   const [mediaRecorder, setMediaRecorder] = useState(null);
   const [recording, setRecording] = useState(false);
@@ -32,7 +33,29 @@ const WebcamRecorder = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://192.168.237.75:8081/ai_text');
+        await axios.get(`${API_URL}/start-questionnaire`);
+        console.log('Questionnaire started');
+      } catch (error) {
+        console.error('Error starting questionnaire:', error);
+        // Handle errors
+      }
+    };
+
+    fetchData();
+
+    const interval = setInterval(fetchData, 4000);
+
+    return () => {
+      clearInterval(interval);
+    };
+  }, []);
+
+  // Rest of the code...
+
+   useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get(`${API_URL}/ai_text`);
         console.log('Bot response:', response.data);
         setBotResponse(response.data.blendData); // Set the bot response in state
       } catch (error) {
@@ -83,24 +106,39 @@ const WebcamRecorder = () => {
     }
   };
 
-  const handleUploadRecording = () => {
-    const blob = new Blob(recordedChunks, { type: 'video/webm' });
-    const videoUrl = URL.createObjectURL(blob);
-    // Now you can do something with the recorded video, like upload it to a server
-    // or display it in a video player
-
-    // Reset the recording state, timer, and paused time
-    setRecordedChunks([]);
-    setRecording(false);
-    setMediaRecorder(null);
-    videoRef.current.srcObject = null;
-    setTimer(0);
-    setPausedTime(0);
+  const handleUploadRecording = async () => {
+    try {
+      const blob = new Blob(recordedChunks, { type: 'video/webm' });
+  
+      // Create a FormData object to send the video file
+      const formData = new FormData();
+      formData.append('video', blob, 'recording.webm');
+  
+      // Send the video file to the API using Axios or fetch
+      const response = await axios.post(`${API_URL}/upload-feed`, formData, {
+        headers: {
+          'Content-Type': 'multipart/form-data',
+        },
+      });
+  
+      console.log('Upload response:', response.data);
+  
+      // Reset the recording state, timer, and paused time
+      setRecordedChunks([]);
+      setRecording(false);
+      setMediaRecorder(null);
+      videoRef.current.srcObject = null;
+      setTimer(0);
+      setPausedTime(0);
+    } catch (error) {
+      console.error('Upload error:', error);
+      // Handle upload errors
+    }
   };
 
   const convertSpeechToText = async () => {
     try {
-      const response = await axios.get('http://192.168.237.75:8081/speechtotext');
+      const response = await axios.get(`${API_URL}/speechtotext`);
       console.log('Speech to text:', response.data);
       setSpeechToText(response.data); // Set the converted text in state
     } catch (error) {
@@ -114,17 +152,26 @@ const WebcamRecorder = () => {
       <div className="flex flex-col items-center">
         <h1 className='text-5xl text-center mt-4 mb-4 text-white font-bold'>Consult 👨‍⚕️</h1>
 
-        <motion.video
-          ref={videoRef}
-          width="540"
-          height="380"
-          autoPlay
-          muted
-          style={{ border: '8px solid black' }}
-          initial={{ opacity: 0, scale: 0.2 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.9 }}
-        />
+        <div className="relative">
+          <motion.video
+            ref={videoRef}
+            width="540"
+            height="380"
+            autoPlay
+            muted
+            style={{ border: '8px solid black' }}
+            initial={{ opacity: 0, scale: 0.2 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.9 }}
+          />
+
+          {recording && (
+            <div className="absolute top-0 left-0 mt-2 ml-2">
+              <p className="text-white text-xl">Recording...</p>
+              <p className="text-white text-xl">Timer: {timer} sec</p>
+            </div>
+          )}
+        </div>
 
         <div className="mt-4">
           <button 
@@ -173,4 +220,4 @@ const WebcamRecorder = () => {
   );
 };
 
-export default WebcamRecorder;
+export default Webcam;

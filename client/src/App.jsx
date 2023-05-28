@@ -15,6 +15,8 @@ import SkinRecord from "./components/SkinRecord";
 import Throatcheck from "./components/Throatcheck";
 import Emotionchart from "./components/Emotionchart";
 import DoctorDashboard from "./components/DoctorDashboard";
+import Healthplan from "./components/Healthplan";
+import Webcam from "./components/Webcam";
 function App() {
   return (
     <div className="container">
@@ -34,6 +36,9 @@ function App() {
           <Route path="/throatcheck" element={<Throatcheck />} />
           <Route path="/emotionchart" element={<Emotionchart />} />
           <Route path="/doctordashboard" element={<DoctorDashboard />} />
+          <Route path="/healthplan" element={<Healthplan />} />
+          <Route path="/webcam" element={<Webcam />} />
+
         </Routes>
       </BrowserRouter>
     </div>

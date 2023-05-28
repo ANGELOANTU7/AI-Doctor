@@ -51,7 +51,7 @@ const Uploadt = () => {
     formData.append('file', file);
 
     axios
-      .post('http://192.168.39.129:8000/test-data', formData)
+      .post('http://192.168.237.75:8081/patient-data', formData)
       .then((response) => {
         console.log('API Response:', response.data);
         // Handle the API response here

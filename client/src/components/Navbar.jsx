@@ -27,9 +27,14 @@ const Navbar = () => {
 
           <div className="hidden md:block">
             <div className="flex space-x-4 text-emerald-400 font-medium">
-            
+            <Link
+                to="/healthplan"
+                className="hover:text-gray-900 px-3 py-2 rounded-md text-sm"
+              >
+                My plan
+              </Link>
               <Link
-                to="/consult"
+                to="/webcam"
                 className="hover:text-gray-900 px-3 py-2 rounded-md text-sm"
               >
                 Consult
@@ -40,7 +45,7 @@ const Navbar = () => {
               >
                 Report
               </Link>
-             
+               
             </div>
           </div>
           <div className="-mr-2 flex md:hidden">
