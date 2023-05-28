@@ -1,0 +1,6 @@
+Location,Gender,Age,BMI,Allergy,Symptoms,Duration of Symptoms,Current Disease Info,Occupation,Smoker,BP Range,Temp Range,Disease,Prescription
+Kozhikode,Female,42,30,Pollen,"Sneezing, Itchy Eyes",3,None,Teacher,No,130/90,36.9°C,Allergic Rhinitis,Antihistamines
+Alappuzha,Male,28,23,None,"Headache, Sore Throat",2,None,Accountant,No,110/70,37.2°C,Tonsillitis,"Analgesics, Antibiotics"
+Ernakulam,Female,50,29,None,"Fatigue, Joint Pain, Muscle Aches",7,None,Nurse,No,125/80,37.8°C,Influenza,"Bed Rest, Antiviral Medication"
+Malappuram,Male,45,31,None,"Chest Pain, Shortness of Breath",1,None,Doctor,No,135/85,37.4°C,Coronary Artery Disease,"Aspirin, Statins"
+Kottayam,Female,32,27,None,"Abdominal Pain, Nausea, Vomiting",4,None,Pharmacist,No,120/80,37.0°C,Gastritis,"Antacids, Proton Pump Inhibitors"
