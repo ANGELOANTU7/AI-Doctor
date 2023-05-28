@@ -1,7 +1,0 @@
-Name: patient1
-Age: 79
-Location: test
-Gender: male
-Height: 184
-Weight: 79
-Contact Info: test
